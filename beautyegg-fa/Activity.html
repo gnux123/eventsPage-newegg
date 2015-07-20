@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang=" zh-TW" lang =" zh-TW">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Themes/css/ActivityBase.css" rel="stylesheet" type="text/css" />
+<title>Activity</title>
+</head>
+
+<body>
+<base target="_blank">
+
+
+<style>
+  body { margin:0; padding:0; font-family: arial, "微軟正黑體";}
+
+  a img { border:0px; }
+
+  .content {
+    width:100%;
+    height:auto;
+  }
+
+  .content > div {
+    margin:0 auto;
+    width:1920px;
+  }
+
+  .mainFocus {
+    height: 668px;
+    background: url(images/mainFocus.jpg) center no-repeat;
+  }
+
+  .focusContent {
+    position: relative;
+    margin:0 auto;
+    width: 1280px;
+    height: 100%;
+  }
+
+  a.links {
+    position: absolute;
+    display: block;
+  }
+
+  a.links.link01 {
+    top:200px;
+    right:265px;
+    width: 390px;
+    height: 125px;
+  }
+
+  a.links.link02 {
+    top:325px;
+    right:255px;
+    width: 400px;
+    height: 85px;
+  }
+
+  a.links.link03 {
+    top:410px;
+    right:255px;
+    width: 400px;
+    height: 112px;
+  }
+  a.links.link04 {
+    top:522px;
+    right:255px;
+    width: 400px;
+    height: 130px;
+  }
+
+  .prodsMain01 {
+      height: 1390px;
+      background: url(images/prodsMain01.jpg) center no-repeat;
+  }
+
+  .prodsMain02 {
+      height: 1498px;
+      background: url(images/prodsMain02.jpg) center no-repeat;
+  }
+
+  .prodsMain03 {
+      height: 1498px;
+      background: url(images/prodsMain03.jpg) center no-repeat;
+  }
+
+  .prodsMain04 {
+      height: 1655px;
+      background: url(images/prodsMain04.jpg) center no-repeat;
+  }
+
+  .prods {
+    position: relative;
+    margin:0 auto;
+    width:980px;
+  }
+
+  .prods.prods01 {
+    top:240px;
+    height:1150px;
+  }
+
+  .prods.prods02 {
+    top:220px;
+    height:1255px;
+  }
+
+  .prods.prods03 {
+    top:185px;
+    height:1255px;
+  }
+
+  .prods.prods04 {
+    top:210px;
+    height:1260px;
+  }
+
+  .notice {
+    height:auto;
+    padding:65px 0;
+    background: #000;
+  }
+
+  .noticeWrap {
+    margin:0 auto;
+    width:980px;
+    height:auto;
+  }
+
+  .noticeWrap h2 {
+    margin:0;
+    padding:10px;
+    display:inline-block;
+    border: 1px solid #fff;
+
+    font-size:18px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    color:#fff;
+
+  }
+
+  .noticeWrap p {
+    color:#fff;
+    font-size:16px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+
+
+  /* itembox command settings */
+  .itemBox {
+    position: absolute;
+    z-index:999;
+    border: 10px solid #000;
+    background: #fff;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .itemBox .pic {
+    position: relative;
+    z-index: -1;
+  }
+
+  .itemBox:before {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1;
+    display: block;
+    content: "";
+    width: 70px;
+    height: 70px;
+    overflow:hidden;
+    background-image: url(images/icons.png);
+    background-repeat:  no-repeat;
+  }
+
+  .prods.prods01 > .itemBox:before {
+    background-position: 0 0;
+  }
+
+  .prods.prods02 > .itemBox:before {
+    background-position: 0 -70px;
+  }
+
+  .prods.prods03 > .itemBox:before {
+    background-position: 0 -140px;
+  }
+
+  .prods.prods04 > .itemBox:before {
+    background-position: 0 -210px;
+  }
+
+  .itemBox > .txt {
+    position: absolute;
+    width: 305px;
+    height: 60px;
+    background: #000;
+    overflow: hidden;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .itemBox > .txt a {
+    text-decoration: none;
+    display: block;
+    width:100%;
+    height:100%;
+    clear:both;
+  }
+
+  .itemBox > .txt h3 {
+    float:left;
+    display: block;
+    margin:0;
+    padding:0;
+    width:60%;
+    height:50px;
+    overflow:hidden;
+    border-right: 1px solid #fff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    font-size: 16px;
+    color:#fff;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    line-height: 25px;
+  }
+
+  .itemBox > .txt span {
+    display: inline-block;
+    margin-left: 1%;
+    width:39%;
+
+    font-family: arial;
+  }
+
+  .itemBox > .txt span.marketPrice {
+    height:30px;
+
+    font-size:23px;
+    line-height:30px;
+    color:#ff0000;
+  }
+
+  .itemBox > .txt span.price {
+    height:20px;
+
+    font-size:13px;
+    line-height:20px;
+    color:#fff;
+  }
+
+</style>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("a.links").each(function(){
+      $(this).click(function(){
+        var $target = $(this).attr("class").split(" ").pop().split("link").pop();
+        smoothScroll($target);
+      });
+    });
+
+    function smoothScroll(obj) {
+      var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+      $body.animate({
+        scrollTop: $('.prodsMain'+obj).offset().top
+      }, 1500);
+      return false;
+    }
+});
+
+//GoTop
+function GoTop() {
+  $(function(){
+    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+    $body.animate({ scrollTop: $body.offset().top }, 1500);
+    return false;
+  });
+}
+</script>
+
+<div class="content">
+    <div class="mainFocus">
+      <div class="focusContent">
+        <a href="javascript:void(0);" class="links link01"></a>
+        <a href="javascript:void(0);" class="links link02"></a>
+        <a href="javascript:void(0);" class="links link03"></a>
+        <a href="javascript:void(0);" class="links link04"></a>
+      </div>
+    </div>
+    <div class="prodsMain01">
+      <div class="prods prods01">
+        <div class="itemBox" itemID="5" style="left:155px; width: 360px; height:360px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -40px; left: -126px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style=" top:120px; left:545px; width: 240px; height:240px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="top:-70px; left:-10px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:350px; left:415px; width: 320px; height:320px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -10px; left: 212px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:460px; left:155px; width: 270px; height:270px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -60px; left: -80px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:795px; left:215px; width: 280px; height:280px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -70px; left: 20px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:685px; left:485px; width: 315px; height:315px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -20px; left: 80px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="prodsMain02">
+      <div class="prods prods02">
+        <div class="itemBox" itemID="5" style="top:65px; left:190px; width: 360px; height:360px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="top: -70px; left: -123px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:0px; left:540px; width: 320px; height:320px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -40px; left: 105px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:415px; left:375px; width: 285px; height:285px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: 75px; right: -315px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:530px; left:40px; width: 345px; height:345px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -30px; right: -145px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:690px; left:570px; width: 350px; height:350px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -70px; right: -10px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:920px; left:270px; width: 310px; height:310px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -35px; right: 200px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="prodsMain03">
+      <div class="prods prods03">
+        <div class="itemBox" itemID="5" style="top:0; left:215px; width: 360px; height:360px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -45px; left: -80px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:180px; left:565px; width: 330px; height:330px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -70px; right: -110px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:410px; left:260px; width: 315px; height:315px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -45px; right: 40px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:780px; left:165px; width: 245px; height:245px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -70px; left: -175px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:755px; left:595px; width: 300px; height:300px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -70px; left: 70px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:1015px; left:330px; width: 275px; height:275px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -40px; left: 50px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="prodsMain04">
+      <div class="prods prods04">
+        <div class="itemBox" itemID="5" style="top:0; left:205px; width: 360px; height:360px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -35px; left: -85px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:125px; left:555px; width: 300px; height:300px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="top: -70px; left: 65px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:415px; left:433px; width: 330px; height:330px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -35px; left: 120px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:540px; left:163px; width: 280px; height:280px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -70px; right: 105px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:810px; left:480px; width: 300px; height:300px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -70px; right: -45px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="itemBox" itemID="5" style="top:895px; left:175px; width: 315px; height:315px;">
+            <div class="pic" style="width:100%; height:100%;">
+                <a href="/賣場連結">
+                    <img style="width:100%; height:100%;" src="/產品圖" alt="{{Name}}" />
+                </a>
+            </div>
+            <div class="txt" style="bottom: -70px; left: -45px;">
+                <a href="/賣場連結">
+                    <h3 title="{{Name}}">{{Name.20}}</h3>
+                    <span class="marketPrice">{{marketPrice}}</span>
+                    <span class="price">{{price}}</span>
+                </a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="notice">
+      <div class="noticeWrap">
+        <h2>注意事項與規則</h2>
+        <p>
+          1. 折價券／回饋金僅限原註冊會員，依「折價券／回饋金使用辦法」於有效期限內（逾期失效，恕不補發），在新蛋全球生活網消費時使用，恕無法轉讓或合併，部分活動或商品無法折抵使用，亦無法折換現金、找零或交換其他商品及折換其他贈品，且無法抵扣物流、安裝、服務、稅賦等費用。<br/>
+          2. 折價券／回饋金之使用方式與注意事項，請參閱「我的帳戶>我的折價券/回饋金」使用辦法。<br/>
+          3. 專案活動及優惠方案（如其他折扣、滿額折、折價券、回饋金）不可合併使用，會員若同時擁有兩種優惠，只能擇一進行折抵。（如該活動已有滿額折，則折價券／回饋金皆無法使用）<br/>
+          4. 折價券／回饋金折抵部分不再另外開立發票，開立發票金額以該訂單「實際支付金額」計算。<br/>
+          5. 商品顏色因電腦螢幕之設定會略有不同，以實際出貨商品顏色為準。<br/>
+          6. 產品數量有限，售完為止。<br/>
+          7. 新蛋全球生活網將保留隨時變更、修改與解釋或終止本「折價券／回饋金使用辦法」之權利，若有異動及修改，將在本網站上公布，恕不另行個別通知。<br/>
+          8. 若您有任何疑問，歡迎來信，我們將於1～2日內（不含例假日）以E-mail回覆您，或請致電客服人員。02-8175 5996  08:30am～17:30pm<br/>
+          9. 海外直購商品由國外進口，須提供「個案委任書」、「自用切結書」、「身分證正反面影印本」，若為電信管制射頻器具類，須填寫「電信射頻器具自用切結書」。
+        </p>
+      </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,708 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang=" zh-TW" lang =" zh-TW">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Themes/css/ActivityBase.css" rel="stylesheet" type="text/css" />
+<title>Activity</title>
+</head>
+
+<body>
+<base target="_blank">
+
+
+<style>
+  body { margin:0; padding:0; font-family: arial,"微軟正黑體";}
+
+  a img { border:0; }
+
+  .content {
+    position: relative;
+    width:100%;
+  }
+
+
+  .content > div {
+    width:100%;
+    overflow:hidden;
+  }
+
+  .mainFocus {
+    position: relative;
+    height:709px;
+    background: url(images/digiFashoin-main.jpg) center no-repeat;
+  }
+
+  .focusContent {
+    position: relative;
+    margin:0 auto;
+    width: 1280px;
+    height: 100%;
+  }
+
+  a.links {
+    position: absolute;
+    display:block;
+    width: 200px;
+    height: 200px;
+  }
+
+  a.links.link01 { left: 230px; bottom: 30px; }
+  a.links.link02 { left: 580px; bottom: 175px; }
+  a.links.link03 { left: 900px; bottom: 30px; }
+
+  .mainProds01,
+  .mainProds02,
+  .mainProds03 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top:345px;
+    padding-left:60px;
+  }
+  .mainProds01 {
+    height:1904px;
+    background: url(images/digiFashion_01.jpg) center no-repeat;
+  }
+
+  .mainProds02 {
+    height:1904px;
+    background: url(images/digiFashion_02.jpg) center no-repeat;
+  }
+
+  .mainProds03 {
+    height:1902px;
+    background: url(images/digiFashion_03.jpg) center no-repeat;
+  }
+
+
+  .prods {
+    position: relative;
+    margin:0 auto;
+    width:1220px;
+    height:1450px;
+    z-index:1000;
+  }
+
+  /* tables settings */
+  .tables {
+    position: relative;
+    z-index: -1;
+    width:720px;
+    height:910px;
+  }
+
+  .tables:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+
+  .tables .cubes {
+    float:left;
+    background: #fff;
+  }
+
+  .tables .cubes .itemBox {
+    position: relative;
+    z-index:5;
+  }
+
+  .tables .cubes .itemBox:before {
+    position: absolute;
+    z-index:1;
+    top:0;
+    left:0;
+    display:block;
+    content: "";
+    width: 95px;
+    height: 95px;
+    background-image: url(images/icons.png);
+    background-repeat: no-repeat;
+  }
+
+  .tables .cubes .itemBox a {
+    position: relative;
+    z-index: 0;
+  }
+
+  .tables .small {
+    width:355px;
+    height:355px;
+  }
+
+  /* itemBox settings */
+  .itemBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .itemBox .pic,
+  .itemBox .pic img {
+    position: relative;
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .itemBox .txt {
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .itemBox > .txt a {
+    text-decoration: none;
+    display: block;
+    width:100%;
+    height:100%;
+    clear:both;
+  }
+
+  .itemBox > .txt h3 {
+    float:left;
+    display: block;
+    margin:0;
+    padding:0;
+    width:60%;
+    height:50px;
+    overflow:hidden;
+    border-right: 1px solid #000;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    font-size: 16px;
+    color:#000;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    line-height: 25px;
+  }
+
+  .itemBox > .txt span {
+    display: inline-block;
+    margin-left: 1%;
+    width:39%;
+
+    font-family: arial;
+  }
+
+  .itemBox > .txt span.marketPrice {
+    height:30px;
+
+    font-size:23px;
+    line-height:30px;
+    color:#ff0000;
+  }
+
+  .itemBox > .txt span.price {
+    height:20px;
+
+    font-size:13px;
+    line-height:20px;
+    color:#000;
+  }
+
+  /* notice settings */
+  .notice {
+      position: relative;
+      width:100%;
+      height:auto;
+      padding:60px 0;
+      background: #000 url(images/notice_bg.gif) no-repeat;
+  }
+
+
+  .noticeWrap {
+    margin:0 auto;
+    width:1200px;
+    height:auto;
+  }
+
+  .noticeWrap h2 {
+    margin:0;
+    padding:10px;
+    display:inline-block;
+    border: 1px solid #fff;
+
+    font-size:18px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    color:#fff;
+
+  }
+
+  .noticeWrap p {
+    color:#fff;
+    font-size:16px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+</style>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("a.links").each(function(){
+      $(this).click(function(){
+        var $target = $(this).attr("class").split(" ").pop().split("link").pop();
+        smoothScroll($target);
+      });
+    });
+
+    function smoothScroll(obj) {
+      var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+      $body.animate({
+        scrollTop: $('.mainProds'+obj).offset().top
+      }, 1500);
+      return false;
+    }
+});
+
+//GoTop
+function GoTop() {
+  $(function(){
+    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+    $body.animate({ scrollTop: $body.offset().top }, 1500);
+    return false;
+  });
+}
+</script>
+
+
+<div class="content">
+    <div class="mainFocus">
+      <div class="focusContent">
+        <a href="javascript:void(0);" class="links link01"></a>
+        <a href="javascript:void(0);" class="links link02"></a>
+        <a href="javascript:void(0);" class="links link03"></a>
+      </div>
+    </div>
+    <div class="mainProds01">
+      <div class="prods prods01">
+        <div class="tables">
+          <div class="cubes small" style="margin:0;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:0 0 0 10px;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 0;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 10px;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 0;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 10px;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 0;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 10px;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainProds02">
+      <div class="prods prods02">
+        <div class="tables">
+          <div class="cubes small" style="margin:0;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:0 0 0 10px;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 0;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 10px;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 0;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 10px;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 0;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 10px;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainProds03">
+      <div class="prods prods03">
+        <div class="tables">
+          <div class="cubes small" style="margin:0;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:0 0 0 10px;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 0;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 10px;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 0;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 10px;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 0;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="cubes small" style="margin:10px 0 0 10px;">
+            <div class="itemBox" itemID="5">
+                <div class="pic">
+                    <a href="/賣場連結">
+                        <img src="/產品圖" alt="{{Name}}" />
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="/賣場連結">
+                        <h3 title="{{Name}}">{{Name.20}}</h3>
+                        <span class="marketPrice">{{marketPrice}}</span>
+                        <span class="price">{{price}}</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="notice">
+      <div class="noticeWrap">
+        <h2>注意事項與規則</h2>
+        <p>
+          1. 折價券／回饋金僅限原註冊會員，依「折價券／回饋金使用辦法」於有效期限內（逾期失效，恕不補發），在新蛋全球生活網消費時使用，恕無法轉讓或合併，部分活動或商品無法折抵使用，亦無法折換現金、找零或交換其他商品及折換其他贈品，且無法抵扣物流、安裝、服務、稅賦等費用。<br/>
+          2. 折價券／回饋金之使用方式與注意事項，請參閱「我的帳戶>我的折價券/回饋金」使用辦法。<br/>
+          3. 專案活動及優惠方案（如其他折扣、滿額折、折價券、回饋金）不可合併使用，會員若同時擁有兩種優惠，只能擇一進行折抵。（如該活動已有滿額折，則折價券／回饋金皆無法使用）<br/>
+          4. 折價券／回饋金折抵部分不再另外開立發票，開立發票金額以該訂單「實際支付金額」計算。<br/>
+          5. 商品顏色因電腦螢幕之設定會略有不同，以實際出貨商品顏色為準。<br/>
+          6. 產品數量有限，售完為止。<br/>
+          7. 新蛋全球生活網將保留隨時變更、修改與解釋或終止本「折價券／回饋金使用辦法」之權利，若有異動及修改，將在本網站上公布，恕不另行個別通知。<br/>
+          8. 若您有任何疑問，歡迎來信，我們將於1～2日內（不含例假日）以E-mail回覆您，或請致電客服人員。02-8175 5996  08:30am～17:30pm<br/>
+          9. 海外直購商品由國外進口，須提供「個案委任書」、「自用切結書」、「身分證正反面影印本」，若為電信管制射頻器具類，須填寫「電信射頻器具自用切結書」。
+        </p>
+      </div>
+    </div>
+    </div>
+
+</body>
+</html>
