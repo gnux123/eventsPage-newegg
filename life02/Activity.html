@@ -153,6 +153,33 @@
     height:525px;
   }
 
+
+  .tables .small.hasIcon .itemBox:before,
+  .tables .big.hasIcon .itemBox:before {
+    position: absolute;
+    display:block;
+    content:"";
+  }
+
+  .tables .small.hasIcon .itemBox:before {
+      top: -15px;
+      left: -10px;
+      width: 144px;
+      height: 31px;
+      background: url(images/icons_small.png) no-repeat;
+
+  }
+
+  .tables .big.hasIcon .itemBox:before {
+      top: -15px;
+      left: -15px;
+      width: 212px;
+      height: 47px;
+      background: url(images/icons_big.png) no-repeat;
+  }
+
+  /* cubes-small settings */
+
   .tables .small .itemBox .pic img {
       width: 215px;
       height: 215px;
@@ -180,6 +207,8 @@
       height: 145px;
       overflow: hidden;
   }
+
+  /* cubes-big settings */
 
   .tables .big .itemBox .pic,
   .tables .big .itemBox .pic img {
@@ -310,10 +339,10 @@
     width: 100%;
     height:50px;
     font-size:18px;
-    font-weight: lighter;
+    font-weight: bolder;
     letter-spacing: 4px;
     line-height: 50px;
-    color:#000;
+    color:#fff;
     text-align: center;
     background: #666;
 
@@ -372,83 +401,83 @@ function GoTop() {
       <div class="prods prods01">
           <div class="tables">
               <div class="cubes big">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="495090">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
               <div class="cubes small" style="margin: 0 0 0 25px;">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="495091">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
               <div class="cubes small" style="margin: 0 0 0 25px;">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="495420">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
               <div class="cubes small" style="margin: 25px 0 0 25px;">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="495107">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
               <div class="cubes small" style="margin: 25px 0 0 25px;">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="434453">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
           </div>
@@ -458,83 +487,83 @@ function GoTop() {
       <div class="prods prods02">
           <div class="tables">
               <div class="cubes big">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="445635">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
               <div class="cubes small" style="margin: 0 0 0 25px;">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="432363">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
               <div class="cubes small" style="margin: 0 0 0 25px;">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="431719">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
               <div class="cubes small" style="margin: 25px 0 0 25px;">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="495425">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
               <div class="cubes small" style="margin: 25px 0 0 25px;">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="494710">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
           </div>
@@ -543,84 +572,84 @@ function GoTop() {
     <div class="mainProds03">
       <div class="prods prods03">
           <div class="tables">
-              <div class="cubes big">
-                  <div class="itemBox" itemID="5">
+              <div class="cubes big hasIcon">
+                  <div class="itemBox" data-itemid="445629">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
               <div class="cubes small" style="margin: 0 0 0 25px;">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="495451">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
               <div class="cubes small" style="margin: 0 0 0 25px;">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="495439">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
               <div class="cubes small" style="margin: 25px 0 0 25px;">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="445618">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
               <div class="cubes small" style="margin: 25px 0 0 25px;">
-                  <div class="itemBox" itemID="5">
+                  <div class="itemBox" data-itemid="445605">
                       <div class="pic">
-                          <a href="/賣場連結">
-                              <img src="/產品圖" alt="{{Name}}" />
+                          <a href="{{itemLink}}">
+                              <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                           </a>
                       </div>
                       <div class="txt">
-                          <a href="/賣場連結">
-                              <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                              <span class="marketPrice">新蛋價 $4,500</span>
+                          <a href="{{itemLink}}">
+                              <h3>{{itemName_20}}</h3>
+                              <span class="marketPrice">{{itemMarketPrice}}</span>
                           </a>
                       </div>
-                      <div class="buyNow" onclick="buyNow()">立即購買</div>
+                      {{itemAddToSC}}
                   </div>
               </div>
           </div>
@@ -630,83 +659,83 @@ function GoTop() {
         <div class="prods prods04">
             <div class="tables">
                 <div class="cubes big">
-                    <div class="itemBox" itemID="5">
+                    <div class="itemBox" data-itemid="445416">
                         <div class="pic">
-                            <a href="/賣場連結">
-                                <img src="/產品圖" alt="{{Name}}" />
+                            <a href="{{itemLink}}">
+                                <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                             </a>
                         </div>
                         <div class="txt">
-                            <a href="/賣場連結">
-                                <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                                <span class="marketPrice">新蛋價 $4,500</span>
+                            <a href="{{itemLink}}">
+                                <h3>{{itemName_20}}</h3>
+                                <span class="marketPrice">{{itemMarketPrice}}</span>
                             </a>
                         </div>
-                        <div class="buyNow" onclick="buyNow()">立即購買</div>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small hasIcon" style="margin: 0 0 0 25px;">
+                    <div class="itemBox" data-itemid="444876">
+                        <div class="pic">
+                            <a href="{{itemLink}}">
+                                <img {{itemImgUrl_1_300}} alt="{{Name}}" />
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}">
+                                <h3>{{itemName_20}}</h3>
+                                <span class="marketPrice">{{itemMarketPrice}}</span>
+                            </a>
+                        </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes small" style="margin: 0 0 0 25px;">
-                    <div class="itemBox" itemID="5">
+                    <div class="itemBox" data-itemid="432211">
                         <div class="pic">
-                            <a href="/賣場連結">
-                                <img src="/產品圖" alt="{{Name}}" />
+                            <a href="{{itemLink}}">
+                                <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                             </a>
                         </div>
                         <div class="txt">
-                            <a href="/賣場連結">
-                                <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                                <span class="marketPrice">新蛋價 $4,500</span>
+                            <a href="{{itemLink}}">
+                                <h3>{{itemName_20}}</h3>
+                                <span class="marketPrice">{{itemMarketPrice}}</span>
                             </a>
                         </div>
-                        <div class="buyNow" onclick="buyNow()">立即購買</div>
-                    </div>
-                </div>
-                <div class="cubes small" style="margin: 0 0 0 25px;">
-                    <div class="itemBox" itemID="5">
-                        <div class="pic">
-                            <a href="/賣場連結">
-                                <img src="/產品圖" alt="{{Name}}" />
-                            </a>
-                        </div>
-                        <div class="txt">
-                            <a href="/賣場連結">
-                                <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                                <span class="marketPrice">新蛋價 $4,500</span>
-                            </a>
-                        </div>
-                        <div class="buyNow" onclick="buyNow()">立即購買</div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes small" style="margin: 25px 0 0 25px;">
-                    <div class="itemBox" itemID="5">
+                    <div class="itemBox" data-itemid="431443">
                         <div class="pic">
-                            <a href="/賣場連結">
-                                <img src="/產品圖" alt="{{Name}}" />
+                            <a href="{{itemLink}}">
+                                <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                             </a>
                         </div>
                         <div class="txt">
-                            <a href="/賣場連結">
-                                <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                                <span class="marketPrice">新蛋價 $4,500</span>
+                            <a href="{{itemLink}}">
+                                <h3>{{itemName_20}}</h3>
+                                <span class="marketPrice">{{itemMarketPrice}}</span>
                             </a>
                         </div>
-                        <div class="buyNow" onclick="buyNow()">立即購買</div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes small" style="margin: 25px 0 0 25px;">
-                    <div class="itemBox" itemID="5">
+                    <div class="itemBox" data-itemid="495413">
                         <div class="pic">
-                            <a href="/賣場連結">
-                                <img src="/產品圖" alt="{{Name}}" />
+                            <a href="{{itemLink}}">
+                                <img {{itemImgUrl_1_300}} alt="{{Name}}" />
                             </a>
                         </div>
                         <div class="txt">
-                            <a href="/賣場連結">
-                                <h3 title="{{Name}}">品牌名稱<br/>商品名稱商品名稱</h3>
-                                <span class="marketPrice">新蛋價 $4,500</span>
+                            <a href="{{itemLink}}">
+                                <h3>{{itemName_20}}</h3>
+                                <span class="marketPrice">{{itemMarketPrice}}</span>
                             </a>
                         </div>
-                        <div class="buyNow" onclick="buyNow()">立即購買</div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
             </div>
@@ -725,7 +754,6 @@ function GoTop() {
           6. 產品數量有限，售完為止。<br/>
           7. 新蛋全球生活網將保留隨時變更、修改與解釋或終止本「折價券／回饋金使用辦法」之權利，若有異動及修改，將在本網站上公布，恕不另行個別通知。<br/>
           8. 若您有任何疑問，歡迎來信，我們將於1～2日內（不含例假日）以E-mail回覆您，或請致電客服人員。02-8175 5996  08:30am～17:30pm<br/>
-          9. 海外直購商品由國外進口，須提供「個案委任書」、「自用切結書」、「身分證正反面影印本」，若為電信管制射頻器具類，須填寫「電信射頻器具自用切結書」。
         </p>
       </div>
     </div>
