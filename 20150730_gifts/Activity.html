@@ -1,0 +1,895 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang=" zh-TW" lang =" zh-TW">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Themes/css/ActivityBase.css" rel="stylesheet" type="text/css" />
+<title>Activity</title>
+</head>
+
+<body>
+<base target="_blank">
+
+
+<style>
+body {
+    margin:0; padding:0; font-family: arial, "微軟正黑體";
+    background:url(images/mainFocus.jpg) #D8F5DB center top no-repeat;
+}
+.mainPadding { margin: 0 auto; }
+a img { border:0px; }
+
+
+.eventsDilver {
+    display:none;
+}
+
+.content {
+    min-width:1280px;
+    width:100%;
+    height:auto;
+}
+
+.content > div {
+    margin:0 auto;
+    min-width:1280px;
+}
+
+.mainFocus {
+    position: relative;
+    width: 100%;
+    height:555px;
+    background:url(images/mainFocus.jpg) center -175px no-repeat;
+}
+
+.focusContent {
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    margin-left: -640px;
+    width:1280px;
+    height: 555px;
+    background: url(images/mainFocus.jpg) center -175px no-repeat;
+}
+
+.prodsContent,
+.prods,
+.notice {
+    position: relative;
+    width: 100%;
+    height:auto;
+
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.mainProds01 {
+    height: 390px;
+    background-image: url(images/mainProds_01.jpg);
+}
+
+.mainProds02 {
+    height: 428px;
+    background-image: url(images/mainProds_02.jpg);
+}
+
+.mainProds03 {
+    height: 400px;
+    background-image: url(images/mainProds_03.jpg);
+}
+
+.mainProds04 {
+    height: 380px;
+    background-image: url(images/mainProds_04.jpg);
+}
+
+.mainProds05 {
+    height: 516px;
+    background-image: url(images/mainProds_05.jpg);
+}
+
+.mainProds06 {
+    height: 423px;
+    background-image: url(images/mainProds_06.jpg);
+}
+
+.tables,
+.noticeWrap {
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left: -640px;
+    width: 1280px;
+    height: 100%;
+}
+
+
+.tables:after,
+.btnslink:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.tables > div {
+    position: relative;
+    float:left;
+    height: 100%;
+}
+
+
+/*links*/
+.focusEvent {
+    position: absolute;
+    bottom:156px;
+    left:273px;
+    width: 38px;
+    height: 27px;
+}
+
+.btnslink {
+    position: absolute;
+    width: 165px;
+    height: 25px;
+}
+
+
+.prodlinks {
+    position: absolute;
+    left:0;
+    display: block;
+    width:100%;
+    height: auto;
+}
+
+
+.btnSP { height:54px; }
+
+.btnSP .links {
+    float:left;
+    margin-left: 5px;
+    height: 100%;
+}
+
+.btnSP .links.marketlink_01 { margin-left:0; }
+
+.marketlink_01,
+.marketlink_02 {
+    float:left;
+    display: block;
+    height:100%;
+}
+
+.marketlink_01 { margin-left:0; width:91px;}
+.marketlink_02 { float:right; width:68px; }
+
+/* focuspord */
+.focusProd01 {
+    left:425px;
+    bottom:14px;
+}
+
+.prodlink01 {
+    position: absolute;
+    left:423px;
+    bottom:68px;
+    display:block;
+    width:350px;
+    height: 115px;
+}
+
+.focusProd02 {
+    right:206px;
+    bottom:68px;
+}
+
+.prodlink02 {
+    position: absolute;
+    right:210px;
+    bottom:98px;
+    display:block;
+    width:295px;
+    height: 280px;
+}
+
+/* prodsModule01 */
+.mainProds01 .prod01 {
+    width:286px;
+    background: url(images/prods01/prods01_01.jpg) no-repeat;
+}
+
+.mainProds01 .prod01 .prodlinks { height: 300px; }
+
+.mainProds01 .prod01 .btnslink {
+    left:58px;
+    bottom:32px;
+}
+
+.mainProds01 .prod02 {
+    width:252px;
+    background: url(images/prods01/prods01_02.jpg) no-repeat;
+}
+
+.mainProds01 .prod02 .prodlinks { height: 285px; }
+
+.mainProds01 .prod02 .btnslink {
+    left:16px;
+    bottom:53px;
+}
+
+.mainProds01 .prod03 {
+    width:208px;
+    background: url(images/prods01/prods01_03.jpg) no-repeat;
+}
+
+.mainProds01 .prod03 .prodlinks { height: 310px; }
+
+.mainProds01 .prod03 .btnslink {
+    left:25px;
+    bottom:27px;
+}
+
+.mainProds01 .prod04 {
+    width:221px;
+    background: url(images/prods01/prods01_04.jpg) no-repeat;
+}
+
+.mainProds01 .prod04 .prodlinks { height: 250px; }
+
+.mainProds01 .prod04 .btnslink {
+    left:16px;
+    bottom:83px;
+}
+
+.mainProds01 .prod05 {
+    width:313px;
+    background: url(images/prods01/prods01_05.jpg) no-repeat;
+}
+
+.mainProds01 .prod05 .prodlinks { height: 290px; }
+
+.mainProds01 .prod05 .btnslink {
+    left:20px;
+    bottom:46px;
+}
+
+
+
+
+
+/* prodsModule02 */
+.mainProds02 .prod01 {
+    width:322px;
+    background: url(images/prods02/prods02_01.jpg) no-repeat;
+}
+
+.mainProds02 .prod01 .prodlinks { height: 280px; }
+
+.mainProds02 .prod01 .btnSP {
+    left:181px;
+    bottom:60px;
+    width:86px;
+}
+
+.mainProds02 .prod01 .btnSP .links { width:25px; }
+
+
+
+.mainProds02 .prod02 {
+    width:227px;
+    background: url(images/prods02/prods02_02.jpg) no-repeat;
+}
+
+.mainProds02 .prod02 .prodlinks { top: 75px; height: 280px; }
+
+.mainProds02 .prod02 .btnslink {
+    left:2px;
+    bottom:20px;
+}
+
+.mainProds02 .prod03 {
+    width:280px;
+    background: url(images/prods02/prods02_03.jpg) no-repeat;
+}
+
+.mainProds02 .prod03 .prodlinks { top: 75px; height: 240px; }
+
+.mainProds02 .prod03 .btnslink {
+    left:28px;
+    bottom:55px;
+}
+
+.mainProds02 .prod04 {
+    width:451px;
+    background: url(images/prods02/prods02_04.jpg) no-repeat;
+}
+
+.mainProds02 .prod04 .prodlinks { top: 70px; height: 230px; }
+
+.mainProds02 .prod04 .btnSP {
+    left:159px;
+    bottom:41px;
+    width:128px;
+}
+
+.mainProds02 .prod04 .btnSP .links.marketlink_01 { width:25px; }
+.mainProds02 .prod04 .btnSP .links.marketlink_02 { width:55px; }
+.mainProds02 .prod04 .btnSP .links.marketlink_03 { width:37px; }
+
+
+
+/* prodsModule03 */
+.mainProds03 .prod01 {
+    width:327px;
+    background: url(images/prods03/prods03_01.jpg) no-repeat;
+}
+
+.mainProds03 .prod01 .prodlinks { height: 280px; }
+
+.mainProds03 .prod01 .btnslink {
+    left:57px;
+    bottom:64px;
+}
+
+.mainProds03 .prod02 {
+    width:230px;
+    background: url(images/prods03/prods03_02.jpg) no-repeat;
+}
+
+.mainProds03 .prod02 .prodlinks {  top: 20px; height: 280px; }
+
+.mainProds03 .prod02 .btnslink {
+    left:1px;
+    bottom:44px;
+}
+
+.mainProds03 .prod03 {
+    width:302px;
+    background: url(images/prods03/prods03_03.jpg) no-repeat;
+}
+
+.mainProds03 .prod03 .prodlinks {  top: 45px; height: 280px; }
+
+.mainProds03 .prod03 .btnslink {
+    left:10px;
+    bottom:21px;
+}
+
+.mainProds03 .prod04 {
+    width:421px;
+    background: url(images/prods03/prods03_04.jpg) no-repeat;
+}
+
+.mainProds03 .prod04 .prodlinks {  top: 45px; height: 235px; }
+
+.mainProds03 .prod04 .btnslink {
+    left:39px;
+    bottom:65px;
+}
+
+
+/* prodsModule04 */
+.mainProds04 .prod01 {
+    width:275px;
+    background: url(images/prods04/prods04_01.jpg) no-repeat;
+}
+
+.mainProds04 .prod01 .prodlinks {  top: 45px; height: 180px; }
+
+.mainProds04 .prod01 .btnslink {
+    left:56px;
+    bottom:97px;
+}
+
+.mainProds04 .prod02 {
+    width:305px;
+    background: url(images/prods04/prods04_02.jpg) no-repeat;
+}
+
+.mainProds04 .prod02 .prodlinks {  top: 93px; height: 200px; }
+
+.mainProds04 .prod02 .btnslink {
+    left:16px;
+    bottom:30px;
+}
+
+.mainProds04 .prod03 {
+    width:217px;
+    background: url(images/prods04/prods04_03.jpg) no-repeat;
+}
+
+.mainProds04 .prod03 .prodlinks {  top: 93px; height: 190px; }
+
+.mainProds04 .prod03 .btnslink {
+    left:13px;
+    bottom:40px;
+}
+
+.mainProds04 .prod04 {
+    width:204px;
+    background: url(images/prods04/prods04_04.jpg) no-repeat;
+}
+
+.mainProds04 .prod04 .prodlinks {  top: 93px; height: 150px; }
+
+.mainProds04 .prod04 .btnslink {
+    left:21px;
+    bottom:82px;
+}
+
+.mainProds04 .prod05 {
+    width:279px;
+    background: url(images/prods04/prods04_05.jpg) no-repeat;
+}
+
+.mainProds04 .prod05 .prodlinks { height: 280px; }
+
+.mainProds04 .prod05 .btnslink {
+    left:19px;
+    bottom:48px;
+}
+
+
+/* prodsModule05 */
+.mainProds05 .prod01 {
+    width:301px;
+    background: url(images/prods05/prods05_01.jpg) no-repeat;
+}
+
+.mainProds05 .prod01 .prodlinks {
+    top:85px;
+    width:50%;
+    height:230px;
+}
+
+.mainProds05 .prod01 .prodlink01 { left:0; }
+.mainProds05 .prod01 .prodlink02 { left:auto; right:0; }
+
+.mainProds05 .prod01 .btnSP {
+    left:153px;
+    bottom:113px;
+    width:67px;
+}
+
+.mainProds05 .prod01 .btnSP .links.marketlink_01 { width:25px; }
+.mainProds05 .prod01 .btnSP .links.marketlink_02 { width:37px; }
+
+.mainProds05 .prod02 {
+    width:220px;
+    background: url(images/prods05/prods05_02.jpg) no-repeat;
+}
+
+.mainProds05 .prod02 .prodlinks { top:115px; height:285px; }
+
+.mainProds05 .prod02 .btnslink {
+    left:3px;
+    bottom:65px;
+}
+
+.mainProds05 .prod03 {
+    width:250px;
+    background: url(images/prods05/prods05_03.jpg) no-repeat;
+}
+
+.mainProds05 .prod03 .prodlinks { top:115px; height:255px; }
+
+.mainProds05 .prod03 .btnslink {
+    left:14px;
+    bottom:95px;
+}
+
+.mainProds05 .prod04 {
+    width:221px;
+    background: url(images/prods05/prods05_04.jpg) no-repeat;
+}
+
+.mainProds05 .prod04 .prodlinks { top:180px; height:255px; }
+
+.mainProds05 .prod04 .btnslink {
+    left:7px;
+    bottom:28px;
+}
+
+.mainProds05 .prod05 {
+    width:288px;
+    background: url(images/prods05/prods05_05.jpg) no-repeat;
+}
+
+.mainProds05 .prod05 .prodlinks { top:120px; height:255px; }
+
+.mainProds05 .prod05 .btnslink {
+    left:20px;
+    bottom:86px;
+}
+
+
+/* prodsModule06 */
+.mainProds06 .prod01 {
+    width:275px;
+    background: url(images/prods06/prods06_01.jpg) no-repeat;
+}
+
+.mainProds06 .prod01 .prodlinks { top:20px; height:255px; }
+
+.mainProds06 .prod01 .btnslink {
+    left:54px;
+    bottom:95px;
+}
+
+.mainProds06 .prod02 {
+    width:263px;
+    background: url(images/prods06/prods06_02.jpg) no-repeat;
+}
+
+.mainProds06 .prod02 .prodlinks { top:135px; height:205px; }
+
+.mainProds06 .prod02 .btnslink {
+    left:12px;
+    bottom:29px;
+}
+
+.mainProds06 .prod03 {
+    width:233px;
+    background: url(images/prods06/prods06_03.jpg) no-repeat;
+}
+
+.mainProds06 .prod03 .prodlinks { top:90px; height:230px; }
+
+.mainProds06 .prod03 .btnslink {
+    left:35px;
+    bottom:49px;
+}
+
+.mainProds06 .prod04 {
+    width:230px;
+    background: url(images/prods06/prods06_04.jpg) no-repeat;
+}
+
+.mainProds06 .prod04 .prodlinks { top:165px; height:175px; }
+
+.mainProds06 .prod04 .btnslink {
+    left:20px;
+    bottom:26px;
+}
+
+.mainProds06 .prod05 {
+    width:279px;
+    background: url(images/prods06/prods06_05.jpg) no-repeat;
+}
+
+.mainProds06 .prod05 .prodlinks { top:50px; height:220px; }
+
+.mainProds06 .prod05 .btnslink {
+    left:22px;
+    bottom:98px;
+}
+
+
+
+/* notice */
+.notice {
+    height:825px;
+    background-image: url(images/notice.jpg);
+}
+
+.noticeWrap {
+    top:208px;
+    width:1130px;
+    height: 617px;
+    padding:0 75px;
+}
+
+.noticeWrap p {
+    color:#288d89;
+    line-height:25px;
+    letter-spacing: 1.3px;
+    font-size: 15px;
+}
+
+.noticeWrap p > b { font-weight:bolder; }
+
+.noticeWrap p > a {
+    color: #FF2939;
+    text-decoration:underline;
+}
+
+.noticeWrap p > a.mails {
+    color:#288d89;
+}
+
+.noticeWrap h2 {
+    display: block;
+    width:99%;
+    height:30px;
+    margin:20px 0 10px 0;
+    padding:0 .5%;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+    font-size: 18px;
+    line-height:30px;
+}
+
+.noticeWrap h2 + p { color:#000; }
+.noticeWrap h2 + p > a { color:#2783BA; }
+
+/* popup */
+.mask {
+    position: fixed;
+    z-index: 98;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+
+.diliverTips {
+    position:fixed;
+    z-index:99;
+    top: 50%;
+    left: 50%;
+
+    margin: -140px 0 0 -512px;
+    padding: 20px;
+    width: 984px;
+    height: 240px;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,.6);
+}
+
+.diliverTips h2 {
+    margin:20px 0;
+
+    font-size: 20px;
+    font-weight:bolder;
+    letter-spacing: 2px;
+}
+
+.diliverTips > p {
+    line-height:25px;
+    letter-spacing: 1.2px;
+}
+
+.closePop {
+    position: absolute;
+    right:5px;
+    top:5px;
+    display:block;
+    width:30px;
+    height:30px;
+    background: #000;
+
+    font-size:20px;
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("a.focusEvent").each(function(){
+          $(this).click(function(){
+            var $target = $(this).attr("class").split(" ").pop().split("_").pop();
+            smoothScroll($target);
+          });
+        });
+
+        function smoothScroll(obj) {
+          var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+          $body.animate({
+            scrollTop: $('#'+obj).offset().top
+          }, 1500);
+          return false;
+        }
+
+
+
+        var _data = $(".eventsDilver").html();
+        $(".eventsDilver").remove();
+        $("body").append("<div class='mask'></div><div class='diliverTips'><a class='closePop' href='javascript:;'>X</a>"+ _data +"</div>");
+        $(".mask, .diliverTips").hide();
+
+        $(".eventsLink").click(function(){
+            $(".mask").fadeIn(function(){ $(".diliverTips").fadeIn(); });
+        });
+
+        $(".mask, .closePop").click(function(){ $(".mask, .diliverTips").fadeOut(); });
+
+    });
+</script>
+
+<div class="eventsDilver">
+    <h2>台北市無法配送地點一覽表</h2>
+    <p>
+        文山區：老泉街、政大一街、政大二街、政大三街、指南路三段<br/>
+        內湖區：大湖山莊區、大湖街、內湖路3段、安泰街、成功路五段、金龍路、康湖路、康樂街、碧山路<br/>
+        士林區全區(恕不配送)<br/>
+        北投區全區(恕不配送)<br/>
+        其他無法配送地區：各級學校校區及宿舍、各區軍營、各大醫院院區及病房、殯儀館、靈骨塔、墓園、各大交通管制區(如機場、高鐵、台鐵、客運轉站、捷運、BRT等)、養老院及安養中心（限親屬接見)、監獄、看守所、私人用地或大樓管制區等
+    </p>
+</div>
+<div class="content">
+    <div class="mainFocus">
+        <div class="focusContent">
+            <a class="focusEvent link_notice" href="javascript:;"></a>
+            <a class="links prodlink01" href="/item?itemid=136786" target="_blank"></a>
+            <a class="links prodlink02" href="/item?itemid=434095" target="_blank"></a>
+            <div class="btnslink focusProd01"><a class="links marketlink_01" href="/item?itemid=136786" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=136786" target="_blank"></a></div>
+            <div class="btnslink focusProd02"><a class="links marketlink_01" href="/item?itemid=434095" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=434095" target="_blank"></a></div>
+        </div>
+    </div>
+
+    <div class="prodsContent">
+        <div class="prods mainProds01">
+            <div class="tables">
+                <div class="prod01">
+                    <a class="prodlinks" href="/item?itemid=132144" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=132144" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=132144" target="_blank"></a></div>
+                </div>
+                <div class="prod02">
+                    <a class="prodlinks" href="/item?itemid=137838" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=137838" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=137838" target="_blank"></a></div>
+                </div>
+                <div class="prod03">
+                    <a class="prodlinks" href="/item?itemid=118114" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=118114" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=118114" target="_blank"></a></div>
+                </div>
+                <div class="prod04">
+                    <a class="prodlinks" href="/item?itemid=107220" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=107220" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=107220" target="_blank"></a></div>
+                </div>
+                <div class="prod05">
+                    <a class="prodlinks" href="/item?itemid=138639" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=138639" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=138639" target="_blank"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="prods mainProds02">
+            <div class="tables">
+                <div class="prod01">
+                    <a class="prodlinks" href="/item?itemid=120063" target="_blank"></a>
+                    <div class="btnslink btnSP"><a class="links marketlink_01" href="/item?itemid=120049" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=120063" target="_blank"></a><a class="links marketlink_03" href="/item?itemid=120065" target="_blank"></a></div>
+                </div>
+                <div class="prod02">
+                    <a class="prodlinks" href="/item?itemid=125995" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=125995" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=125995" target="_blank"></a></div>
+                </div>
+                <div class="prod03">
+                    <a class="prodlinks" href="/item?itemid=133373" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=133373" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=133373" target="_blank"></a></div>
+                </div>
+                <div class="prod04">
+                    <a class="prodlinks" href="/item?itemid=113466" target="_blank"></a>
+                    <div class="btnslink btnSP"><a class="links marketlink_01" href="/item?itemid=113464" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=113465" target="_blank"></a><a class="links marketlink_03" href="/item?itemid=113466" target="_blank"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="prods mainProds03">
+            <div class="tables">
+                <div class="prod01">
+                    <a class="prodlinks" href="/item?itemid=134541" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=134541" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=134541" target="_blank"></a></div>
+                </div>
+                <div class="prod02">
+                    <a class="prodlinks" href="/item?itemid=431389" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=431389" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=431389" target="_blank"></a></div>
+                </div>
+                <div class="prod03">
+                    <a class="prodlinks" href="/item?itemid=433156" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=433156" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=433156" target="_blank"></a></div>
+                </div>
+                <div class="prod04">
+                    <a class="prodlinks" href="/item?itemid=120274" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=120274" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=120274" target="_blank"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="prods mainProds04">
+            <div class="tables">
+                <div class="prod01">
+                    <a class="prodlinks" href="/item?itemid=104057" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=104057" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=104057" target="_blank"></a></div>
+                </div>
+                <div class="prod02">
+                    <a class="prodlinks" href="/item?itemid=107606" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=107606" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=107606" target="_blank"></a></div>
+                </div>
+                <div class="prod03">
+                    <a class="prodlinks" href="/item?itemid=435338" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=435338" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=435338" target="_blank"></a></div>
+                </div>
+                <div class="prod04">
+                    <a class="prodlinks" href="/item?itemid=450605" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=450605" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=435484" target="_blank"></a></div>
+                </div>
+                <div class="prod05">
+                    <a class="prodlinks" href="/item?itemid=128511" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=128511" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=128511" target="_blank"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="prods mainProds05">
+            <div class="tables">
+                <div class="prod01">
+                    <a class="prodlinks prodlink01" href="/item?itemid=435184" target="_blank"></a>
+                    <a class="prodlinks prodlink02" href="/item?itemid=435194" target="_blank"></a>
+                    <div class="btnslink btnSP"><a class="links marketlink_01" href="/item?itemid=435194" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=435184" target="_blank"></a></div>
+                </div>
+                <div class="prod02">
+                    <a class="prodlinks" href="/item?itemid=435129" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=435129" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=435129" target="_blank"></a></div>
+                </div>
+                <div class="prod03">
+                    <a class="prodlinks" href="/item?itemid=431406" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=431406" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=431406" target="_blank"></a></div>
+                </div>
+                <div class="prod04">
+                    <a class="prodlinks" href="/item?itemid=433094" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=433094" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=433094" target="_blank"></a></div>
+                </div>
+                <div class="prod05">
+                    <a class="prodlinks" href="/item?itemid=433386" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=433386" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=433386" target="_blank"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="prods mainProds06">
+            <div class="tables">
+                <div class="prod01">
+                    <a class="prodlinks" href="/item?itemid=441862" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=441862" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=441862" target="_blank"></a></div>
+                </div>
+                <div class="prod02">
+                    <a class="prodlinks" href="/item?itemid=433309" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=433309" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=433309" target="_blank"></a></div>
+                </div>
+                <div class="prod03">
+                    <a class="prodlinks" href="/item?itemid=433383" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=433383" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=433383" target="_blank"></a></div>
+                </div>
+                <div class="prod04">
+                    <a class="prodlinks" href="/item?itemid=438725" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=438725" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=438725" target="_blank"></a></div>
+                </div>
+                <div class="prod05">
+                    <a class="prodlinks" href="/item?itemid=433382" target="_blank"></a>
+                    <div class="btnslink"><a class="links marketlink_01" href="/item?itemid=433382" target="_blank"></a><a class="links marketlink_02" href="/item?itemid=433382" target="_blank"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="notice" class="notice">
+        <div class="noticeWrap">
+            <p>
+                1. 本專人送禮活動(以下簡稱本活動)為限時、限量精選商品(非全站商品適用)的會員專屬服務，為提供您最好的專人送禮服務，客服人員將致電與您確認配送日期與時間，<b>購買<專人送禮>商品請於結帳頁下方，備註欄加註<專人送禮>與希望收件日</b>。<br/>
+                2. 本活動自8/1(六)9:00起至8/17(一)23:59止接受專人送禮的訂單，並於8/3(一)9:00至8/20(四)18:00進行配送，依客服人員與您確認的時間為準。<br/>
+                3. 本活動專人配送以台北市為主，士林區與北投區及其他部分地址(請<a class="eventsLink" href="javascript:;">點我</a>)目前暫無提供此服務。如遇天災如颱風、地震或其他不可抗力因素，出貨時間將順延（依人事行政局公告標準為主）。
+                歡迎來電洽詢，期待您的寶貴建議：02-8006-8010，專人送禮email：<a class="mails" href="mailto:Gifting_Service@newegg.com.tw">Gifting_Service@newegg.com.tw</a>。<br/>
+                4. 專人送禮商品僅限於專人送禮限時賣場，恕無法配送其他賣場的商品，並且無法協助配送訂購者其他私人物品。<br/>
+                5. 若專人送禮服務屢次配送不成功或收件人要求改期，且收件日期在8/21(含)以後，則將委由一般物流或快遞配送。<br/>
+                6. 若收禮者或訂購者臨時通知更改收件地址或收件時間，則將重新安排配送日期及時程。
+            </p>
+
+            <h2>活動注意事項</h2>
+            <p>
+                1. 滿額折期間(依活動頁刊頭為主)，全站商品結帳滿3,000(含)以上可參加滿額現折500元，此優惠恕不與折價券同時使用，部分商品不適用。滿額折結帳時超過3,000元(含)以上恕不再累計。恕不可跨活動計算折價。<br/>
+                2. 折價券使用方式：在結帳頁面點擊「使用折價券」後，選擇「折價券」，系統將自動扣除折價券之金額。取消訂單或辦理退貨恕不補發折價券。<br/>
+                3. 商品顏色因電腦螢幕之設定會略有不同，以實際出貨商品顏色為準。<br/>
+                4. 商品數量有限，售完為止。<br/>
+                5. 參加消費滿額折之商品若事後取消訂單或辦理退貨，須將所有參加滿額折商品一併退貨，並僅會退還您實際支付的金額。使用折價券之商品若事後取消訂單或辦理退貨，僅會退還您實際支付的金額。<br/>
+                6. 8/1-8/9滿額888抽機票活動請見活動頁說明：<a href="https://secure.newegg.com.tw/act/ticket888_0801" target="_blank">點我</a>。<br/>
+                7. 折價券僅限原註冊會員，依「折價券使用辦法」於有效期限內（逾期失效，恕不補發），在新蛋全球生活網消費時使用，恕無法轉讓或合併，部分活動或商品無法折抵使用，亦無法折換現金、找零或交換其他商品及折換其他贈品，
+                且無法抵扣物流、安裝、服務、稅賦等費用。<br/>
+                8. 新蛋全球生活網將保留隨時變更、修改與解釋或終止本「折價券使用辦法」之權利，若有異動及修改，將在本網站上公布，恕不另行個別通知。
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

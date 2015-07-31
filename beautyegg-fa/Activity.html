@@ -13,7 +13,7 @@
 <style>
   body { margin:0; padding:0; font-family: arial, "微軟正黑體";}
 
-  a img { border:0px; }
+  a img{ border:0px; }
 
   .content {
     width:100%;
@@ -170,6 +170,22 @@
     z-index: -1;
   }
 
+  .itemBox .pic a {
+      position: relative;
+      display:block;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+
+
+  .itemBox .pic img{
+      position: absolute;
+      left:0;
+
+      width:100%;
+  }
+
   .itemBox:before {
     position:absolute;
     left:0;
@@ -283,6 +299,32 @@ $(function(){
     }
 });
 
+$(window).load(function(){
+
+     var loadWatch = setInterval(posChange, 500);
+
+    function posChange() {
+        $(".itemBox img").each(function(){
+            if(this.complete) {
+                var _width = $(this).width(),
+                    _height = $(this).height(),
+                    values = parseFloat(Math.round((_width/_height)*100))/100;
+
+                    if(values > 1 ) {
+                        $(this).css({
+                            "top":"50%",
+                            "margin-top": "-"+ parseFloat(Math.round((_height/2)*10))/10 +"px"
+                        });
+                    } else {
+                        return false;
+                    }
+                 clearInterval(loadWatch);
+
+            }
+        });
+    }
+});
+
 //GoTop
 function GoTop() {
   $(function(){
@@ -307,7 +349,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="132144" style="left:155px; width: 360px; height:360px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0013/2144_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="bottom: -40px; left: -126px;">
@@ -321,7 +363,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="107220" style=" top:120px; left:545px; width: 240px; height:240px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0010/7220_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="top:-70px; left:-10px;">
@@ -335,7 +377,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="125188" style="top:350px; left:415px; width: 320px; height:320px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0013/7837_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="bottom: -10px; left: 212px;">
@@ -349,7 +391,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="137837" style="top:460px; left:155px; width: 270px; height:270px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0013/7837_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="bottom: -60px; left: -80px;">
@@ -363,7 +405,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="138639" style="top:795px; left:215px; width: 280px; height:280px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0012/5188_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="bottom: -70px; left: 20px;">
@@ -377,7 +419,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="118114" style="top:685px; left:485px; width: 315px; height:315px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0011/8114_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="bottom: -20px; left: 80px;">
@@ -395,7 +437,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="153547" style="top:65px; left:190px; width: 360px; height:360px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0013/8639_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="top: -70px; left: -123px;">
@@ -409,7 +451,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="54564" style="top:0px; left:540px; width: 320px; height:320px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0005/4564_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="bottom: -40px; left: 105px;">
@@ -423,7 +465,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="153549" style="top:415px; left:375px; width: 285px; height:285px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0015/3547_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="bottom: 75px; right: -315px;">
@@ -437,7 +479,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="13545" style="top:530px; left:40px; width: 345px; height:345px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0015/3547_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="bottom: -30px; right: -145px;">
@@ -451,7 +493,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="153546" style="top:690px; left:570px; width: 350px; height:350px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0015/3547_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="bottom: -70px; right: -10px;">
@@ -465,7 +507,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="153548" style="top:920px; left:270px; width: 310px; height:310px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0015/3557_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="bottom: -35px; right: 200px;">
@@ -483,7 +525,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="153557" style="top:0; left:215px; width: 360px; height:360px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0015/3555_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="bottom: -45px; left: -80px;">
@@ -497,7 +539,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="153552" style="top:180px; left:565px; width: 330px; height:330px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="https://ssl-images.newegg.com.tw/pic/item/0015/3556_1_640.jpg" />
                 </a>
             </div>
             <div class="txt" style="bottom: -70px; right: -110px;">
@@ -511,7 +553,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="153555" style="top:410px; left:260px; width: 315px; height:315px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="{{itemImgUrl_1_300}}" />
                 </a>
             </div>
             <div class="txt" style="bottom: -45px; right: 40px;">
@@ -525,7 +567,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="153553" style="top:780px; left:165px; width: 245px; height:245px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="{{itemImgUrl_1_300}}" />
                 </a>
             </div>
             <div class="txt" style="bottom: -70px; left: -175px;">
@@ -539,7 +581,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="153556" style="top:755px; left:595px; width: 300px; height:300px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="{{itemImgUrl_1_300}}" />
                 </a>
             </div>
             <div class="txt" style="bottom: -70px; left: 70px;">
@@ -553,7 +595,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="153554" style="top:1015px; left:330px; width: 275px; height:275px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="{{itemImgUrl_1_300}}" />
                 </a>
             </div>
             <div class="txt" style="bottom: -40px; left: 50px;">
@@ -572,7 +614,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="159313" style="top:0; left:205px; width: 360px; height:360px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="{{itemImgUrl_1_300}}" />
                 </a>
             </div>
             <div class="txt" style="bottom: -35px; left: -85px;">
@@ -586,7 +628,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="433387" style="top:125px; left:555px; width: 300px; height:300px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="{{itemImgUrl_1_300}}" />
                 </a>
             </div>
             <div class="txt" style="top: -70px; left: 65px;">
@@ -600,7 +642,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="317794" style="top:415px; left:433px; width: 330px; height:330px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="{{itemImgUrl_1_300}}" />
                 </a>
             </div>
             <div class="txt" style="bottom: -35px; left: 120px;">
@@ -614,7 +656,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="159310" style="top:540px; left:163px; width: 280px; height:280px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="{{itemImgUrl_1_300}}" />
                 </a>
             </div>
             <div class="txt" style="bottom: -70px; right: 105px;">
@@ -628,7 +670,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="159309" style="top:810px; left:480px; width: 300px; height:300px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="{{itemImgUrl_1_300}}" />
                 </a>
             </div>
             <div class="txt" style="bottom: -70px; right: -45px;">
@@ -642,7 +684,7 @@ function GoTop() {
         <div class="itemBox" data-itemid="159311" style="top:895px; left:175px; width: 315px; height:315px;">
             <div class="pic" style="width:100%; height:100%;">
                 <a href="{{itemLink}}" target="_blank">
-                    <img style="width:100%; height:100%;" src="{{itemImgUrl_1_300}}" />
+                    <img src="{{itemImgUrl_1_300}}" />
                 </a>
             </div>
             <div class="txt" style="bottom: -70px; left: -45px;">
@@ -674,4 +716,5 @@ function GoTop() {
     </div>
 </div>
 </body>
+<script src="http://localhost:35729/livereload.js"></script>
 </html>
