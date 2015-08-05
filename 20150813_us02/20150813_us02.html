@@ -1,0 +1,819 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang=" zh-TW" lang =" zh-TW">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Themes/css/ActivityBase.css" rel="stylesheet" type="text/css" />
+<title>Activity</title>
+</head>
+
+<body>
+<base target="_blank">
+
+
+<style>
+  body { margin:0; padding:0; font-family: arial, "微軟正黑體";
+        background: url(/img/Activity/20150813_us02/mainFocus.jpg) center top no-repeat;
+ }
+
+  a img{ border:0px; }
+
+  .mainPadding { margin: 0 auto; }
+
+  .content {
+    width:100%;
+    height:auto;
+  }
+
+  .content > div {
+    margin:0 auto;
+    width:100%;
+    min-width:1280px;
+  }
+
+  .mainFocus {
+    height: 582px;
+    background: url(/img/Activity/20150813_us02/mainFocus.jpg) center -175px no-repeat;
+  }
+
+  .focusContent {
+    position: relative;
+    margin:0 auto;
+    width: 1280px;
+    height: 100%;
+  }
+
+  a.links {
+    position: absolute;
+    bottom:0;
+    display: block;
+    width:265px;
+    height:100px;
+  }
+
+  a.links.link01 {
+    left:65px;
+  }
+
+  a.links.link02 {
+    left:330px;
+  }
+
+  a.links.link03 {
+    left:595px;
+  }
+  a.links.link04 {
+    left:860px;
+  }
+
+  .prodsMain01,
+  .prodsMain02,
+  .prodsMain03,
+  .prodsMain04 { height: 1710px; }
+
+  .prodsMain01 {
+      background: url(/img/Activity/20150813_us02/us02bg_01.jpg) center no-repeat;
+  }
+
+  .prodsMain02 {
+      background: url(/img/Activity/20150813_us02/us02bg_02.jpg) center no-repeat;
+  }
+
+  .prodsMain03 {
+      background: url(/img/Activity/20150813_us02/us02bg_03.jpg) center no-repeat;
+  }
+
+  .prodsMain04 {
+      background: url(/img/Activity/20150813_us02/us02bg_04.jpg) center no-repeat;
+  }
+
+  .prods {
+    position: relative;
+    top:460px;
+    margin:0 auto;
+    width:943px;
+    height:642px;
+  }
+
+  .prods:after {
+     content: "";
+     display: table;
+     clear: both;
+  }
+
+  .prods > div {
+      position: relative;
+      float:left;
+      width:311px;
+      height:311px;
+      margin-left:5px;
+      margin-bottom: 5px;
+      background: #fff;
+  }
+
+
+  .prods > div:before {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1;
+    display: block;
+    content: "";
+    width: 70px;
+    height: 70px;
+    overflow:hidden;
+    background-image: url(/img/Activity/20150813_us02/icons.png);
+    background-repeat:  no-repeat;
+  }
+
+  .prods.prods01 { top: 945px; }
+  .prods.prods02 { top: 930px; }
+  .prods.prods03 { top: 890px; }
+  .prods.prods04 { top: 920px; }
+
+  .prods.prods01 .itemBox > .txt a p { color:#1e2675; }
+  .prods.prods02 .itemBox > .txt a p { color:#cd1b21; }
+  .prods.prods03 .itemBox > .txt a p { color:#0c8868; }
+  .prods.prods04 .itemBox > .txt a p { color:#d96e1d; }
+
+
+  .prods.prods01 > div:before {
+    background-position: 0 0;
+  }
+
+  .prods.prods02 > div:before {
+    background-position: 0 -70px;
+  }
+
+  .prods.prods03 > div:before {
+    background-position: 0 -140px;
+  }
+
+  .prods.prods04 > div:before {
+    background-position: 0 -210px;
+  }
+
+  .prods > div:first-child,
+  .prods > div:first-child+div+div+div { margin-left:0; }
+
+  .notice {
+    height:auto;
+    padding:65px 0;
+    background: #000;
+  }
+
+  .noticeWrap {
+    margin:0 auto;
+    width:980px;
+    height:auto;
+  }
+
+  .noticeWrap h2 {
+    margin:0;
+    padding:10px;
+    display:inline-block;
+    border: 1px solid #fff;
+
+    font-size:18px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    color:#fff;
+
+  }
+
+  .noticeWrap p {
+    color:#fff;
+    font-size:16px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+
+  .noticeWrap p a {
+      text-decoration: none;
+      color: #fff;
+  }
+
+
+  /* itembox command settings */
+  .itemBox {
+    position: relative;
+    width:100%;
+    height:100%;
+    background: #fff;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .itemBox .pic {
+    position: relative;
+    z-index: -1 \9;
+    width:100%;
+    height:75%;
+    overflow: hidden;
+  }
+
+  .itemBox .pic a {
+      position: relative;
+      display:block;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+
+
+  .itemBox .pic img {
+      position: absolute;
+      left:0;
+
+      width:100%;
+  }
+
+  .itemBox > .txt {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background: #fff;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .itemBox > .txt a {
+    position: relative;
+    top: 20px;
+    display: block;
+    width:100%;
+    height:50px;
+    text-decoration: none;
+    background: #f1f2f2;
+
+  }
+
+  .itemBox > .txt a:after {
+     content: "";
+     display: table;
+     clear: both;
+  }
+
+  .itemBox > .txt a p {
+      position: absolute;
+      top:-30px;
+      left:0;
+      margin:0;
+      padding:0;
+      display:block;
+      width: 100%;
+      height: 25px;
+
+      font-size:18px;
+      color:red;
+      line-height:30px;
+      letter-spacing: 1px;
+      font-weight:lighter;
+  }
+
+  .itemBox > .txt a h3 {
+      float:left;
+      margin:0;
+      padding:0;
+      width:58%;
+      height:44px;
+      padding: 3px 1%;
+      overflow: hidden;
+
+
+      color:#000;
+      font-size:15px;
+      line-height: 22px;
+      font-weight: lighter;
+  }
+
+  .itemBox > .txt a .price {
+      float:right;
+      display:block;
+      width:32%;
+      height:39px;
+      overflow: hidden;
+      margin-top:5px;
+      padding: 0 0 3px 2%;
+      border-left: 1px solid #000;
+
+      font-size:28px;
+      text-align:center;
+      line-height:39px;
+      color:red;
+  }
+
+</style>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("a.links").each(function(){
+      $(this).click(function(){
+        var $target = $(this).attr("class").split(" ").pop().split("link").pop();
+        smoothScroll($target);
+      });
+    });
+
+    function smoothScroll(obj) {
+      var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+      $body.animate({
+        scrollTop: $('.prodsMain'+obj).offset().top
+      }, 1500);
+      return false;
+    }
+});
+
+// $(window).load(function(){
+//
+//      var loadWatch = setInterval(posChange, 500);
+//
+//     function posChange() {
+//         $(".itemBox img").each(function(){
+//             if(this.complete) {
+//                 var _width = $(this).width(),
+//                     _height = $(this).height(),
+//                     values = parseFloat(Math.round((_width/_height)*100))/100;
+//
+//                     if(values > 1 ) {
+//                         $(this).css({
+//                             "top":"50%",
+//                             "margin-top": "-"+ parseFloat(Math.round((_height/2)*10))/10 +"px"
+//                         });
+//                     } else {
+//                         return false;
+//                     }
+//                  clearInterval(loadWatch);
+//
+//             }
+//         });
+//     }
+// });
+
+//GoTop
+function GoTop() {
+  $(function(){
+    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+    $body.animate({ scrollTop: $body.offset().top }, 1500);
+    return false;
+  });
+}
+</script>
+
+<div class="content">
+    <div class="mainFocus">
+      <div class="focusContent">
+        <a href="javascript:void(0);" class="links link01"></a>
+        <a href="javascript:void(0);" class="links link02"></a>
+        <a href="javascript:void(0);" class="links link03"></a>
+        <a href="javascript:void(0);" class="links link04"></a>
+      </div>
+    </div>
+    <div class="prodsMain01">
+      <div class="prods prods01">
+          <div class="prod">
+              <div class="itemBox" data-itemid="45123">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p>{{itemSubTitle}}</p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="73470">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="42801">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="317793">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="466627">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="298570">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="prodsMain02">
+      <div class="prods prods02">
+          <div class="prod">
+              <div class="itemBox" data-itemid="298570">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p>{{itemSubTitle}}</p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="361067">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="466560">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="119835">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="466561">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="466581">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="prodsMain03">
+      <div class="prods prods03">
+          <div class="prod">
+              <div class="itemBox" data-itemid="96523">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p>{{itemSubTitle}}</p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="306465">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="41135">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="124069">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="72646">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="466583">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+    </div>
+    <div class="prodsMain04">
+      <div class="prods prods04">
+          <div class="prod">
+              <div class="itemBox" data-itemid="75916">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p>{{itemSubTitle}}</p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="361065">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="301614">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="106642">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="119873">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="prod">
+              <div class="itemBox" data-itemid="116077">
+                  <div class="pic">
+                      <a href="{{itemLink}}" target="_blank">
+                          <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
+
+                      </a>
+                  </div>
+                  <div class="txt">
+                      <a href="{{itemLink}}" target="_blank">
+                          <p></p>
+                          <h3>{{itemName_50}}</h3>
+                          {{itemPrice}}
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+    </div>
+    <div class="notice">
+      <div class="noticeWrap">
+        <h2>注意事項與規則</h2>
+        <p>
+          1. 折價券／回饋金僅限原註冊會員，依「折價券／回饋金使用辦法」於有效期限內（逾期失效，恕不補發），在新蛋全球生活網消費時使用，恕無法轉讓或合併，部分活動或商品無法折抵使用，亦無法折換現金、找零或交換其他商品及折換其他贈品，且無法抵扣物流、安裝、服務、稅賦等費用。<br/>
+          2. 折價券／回饋金之使用方式與注意事項，請參閱「我的帳戶><a href="/MyAccount/Coupon" target="_blank">我的折價券</a>/回饋金」使用辦法。<br/>
+          3. 專案活動及優惠方案（如其他折扣、滿額折、折價券、回饋金）不可合併使用，會員若同時擁有兩種優惠，只能擇一進行折抵。（如該活動已有滿額折，則折價券／回饋金皆無法使用）<br/>
+          4. 折價券／回饋金折抵部分不再另外開立發票，開立發票金額以該訂單「實際支付金額」計算。<br/>
+          5. 商品顏色因電腦螢幕之設定會略有不同，以實際出貨商品顏色為準。<br/>
+          6. 產品數量有限，售完為止。<br/>
+          7. 新蛋全球生活網將保留隨時變更、修改與解釋或終止本「折價券／回饋金使用辦法」之權利，若有異動及修改，將在本網站上公布，恕不另行個別通知。<br/>
+          8. 若您有任何疑問，歡迎<a href="mailto:service@newegg.com.tw">來信</a>，我們將於1～2日內（不含例假日）以E-mail回覆您，或請致電客服人員。02-8175 5996  08:30am～17:30pm<br/>
+          9. 海外直購商品由國外進口，須提供「個案委任書」、「自用切結書」、「身分證正反面影印本」，若為電信管制射頻器具類，須填寫「電信射頻器具自用切結書」。
+        </p>
+      </div>
+    </div>
+</div>
+</body>
+<script src="http://localhost:35729/livereload.js"></script>
+</html>
