@@ -125,7 +125,7 @@
   }
 
 
-  .prods > div:before {
+  .prods .itemBox .buyNow {
     position:absolute;
     z-index:2 \9;
     left:0;
@@ -134,10 +134,13 @@
     display: block;
     content: "";
     width: 70px;
-    height: 70px;
+    height: 0;
+    padding-top: 70px;
     overflow:hidden;
     background-image: url(/img/Activity/20150813_us02/icons.png);
     background-repeat:  no-repeat;
+
+    cursor:pointer;
   }
 
   .prods.prods01 { top: 945px; }
@@ -151,19 +154,19 @@
   .prods.prods04 .itemBox > .txt a p { color:#d96e1d; }
 
 
-  .prods.prods01 > div:before {
+  .prods.prods01 .itemBox .buyNow {
     background-position: 0 0;
   }
 
-  .prods.prods02 > div:before {
+  .prods.prods02 .itemBox .buyNow {
     background-position: 0 -70px;
   }
 
-  .prods.prods03 > div:before {
+  .prods.prods03 .itemBox .buyNow {
     background-position: 0 -140px;
   }
 
-  .prods.prods04 > div:before {
+  .prods.prods04 .itemBox .buyNow {
     background-position: 0 -210px;
   }
 
@@ -442,6 +445,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -459,6 +463,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -476,6 +481,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -493,6 +499,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -510,6 +517,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -527,6 +535,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
       </div>
@@ -548,6 +557,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -565,6 +575,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -582,6 +593,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -599,6 +611,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -616,6 +629,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -633,6 +647,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
       </div>
@@ -654,6 +669,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -671,6 +687,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -688,6 +705,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -705,6 +723,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -722,6 +741,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -739,6 +759,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
 
@@ -761,6 +782,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -778,6 +800,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -795,6 +818,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -812,6 +836,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -829,6 +854,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
           <div class="prod">
@@ -846,6 +872,7 @@ function GoTop() {
                           {{itemPrice}}
                       </a>
                   </div>
+                  {{itemAddToSC}}
               </div>
           </div>
 
