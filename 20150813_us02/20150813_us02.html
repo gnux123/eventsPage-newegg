@@ -11,13 +11,23 @@
 
 
 <style>
-  body { margin:0; padding:0; font-family: arial, "微軟正黑體";
-        background: url(/img/Activity/20150813_us02/mainFocus.jpg) center top no-repeat;
+  body { margin:0; padding:0; font-family: arial, "微軟正黑體"; }
+
+ .wrapper {
+     width:100%;
+     min-width:1024px;
+     background: url(/img/Activity/20150813_us02/mainFocus.jpg) center top no-repeat;
  }
 
-  a img{ border:0px; }
+ .mainPadding { margin: 0 auto; }
 
-  .mainPadding { margin: 0 auto; }
+ .wrapper > .mainPadding {
+     margin: 0 auto;
+     margin-bottom: 0px;
+ }
+
+
+  a img{ border:0px; }
 
   .content {
     width:100%;
@@ -27,10 +37,13 @@
   .content > div {
     margin:0 auto;
     width:100%;
-    min-width:1280px;
+    min-width:1024px;
+    max-width:1920px;
+    overflow:hidden;
   }
 
   .mainFocus {
+    position: relative;
     height: 582px;
     background: url(/img/Activity/20150813_us02/mainFocus.jpg) center -175px no-repeat;
   }
@@ -44,25 +57,25 @@
 
   a.links {
     position: absolute;
-    bottom:0;
+    bottom:15px;
     display: block;
     width:265px;
     height:100px;
   }
 
   a.links.link01 {
-    left:65px;
+    left:130px;
   }
 
   a.links.link02 {
-    left:330px;
+    left:395px;
   }
 
   a.links.link03 {
-    left:595px;
+    left:660px;
   }
   a.links.link04 {
-    left:860px;
+    left:925px;
   }
 
   .prodsMain01,
@@ -303,9 +316,47 @@
       border-left: 1px solid #000;
 
       font-size:28px;
-      text-align:center;
+      text-align:right;
       line-height:39px;
       color:red;
+  }
+
+
+  /* resposive web design */
+  @media screen and (min-width:0px) and (max-width: 1024px) {
+      .wrapper { overflow-x:hidden; }
+
+      .focusContent,
+      .noticeWrap { width:1024px; }
+
+      .footer {
+          margin:0;
+          width: 100%;
+      }
+
+      a.links.link01 {
+        left:0px;
+      }
+
+      a.links.link02 {
+        left:265px;
+      }
+
+      a.links.link03 {
+        left:530px;
+      }
+      a.links.link04 {
+        left:795px;
+      }
+  }
+
+  @media screen and (min-width:1025px) and (max-width: 1280px) {
+      .wrapper { overflow-x:hidden; }
+
+      .footer {
+          margin:0;
+          width: 100%;
+      }
   }
 
 </style>
