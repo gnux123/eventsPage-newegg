@@ -116,7 +116,7 @@
         z-index:5;
     }
 
-    .tables .cubes .itemBox:before {
+    .tables .cubes .itemBox .buyNow {
         position: absolute;
         z-index:1;
         top:0;
@@ -124,19 +124,22 @@
         display:block;
         content: "";
         width: 70px;
-        height: 70px;
+        height: 0;
+        padding-top:70px;
+        overflow:hidden;
         background-image: url(/img/Activity/20150813_3C01/icons.png);
         background-repeat: no-repeat;
-        }
+        cursor:pointer;
+    }
 
-        .tables .cubes .itemBox a {
+    .tables .cubes .itemBox a {
         position: relative;
         z-index: 0;
     }
 
-    .mainProds01 .itemBox:before { background-position: 0 0; }
-    .mainProds02 .itemBox:before { background-position: 0 -70px; }
-    .mainProds03 .itemBox:before { background-position: 0 -140px; }
+    .mainProds01 .itemBox .buyNow { background-position: 0 0; }
+    .mainProds02 .itemBox .buyNow { background-position: 0 -70px; }
+    .mainProds03 .itemBox .buyNow { background-position: 0 -140px; }
 
     .mainProds01 .itemBox .txt p { color: #ab7bca; }
     .mainProds02 .itemBox .txt p { color: #468f87; }
@@ -424,6 +427,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes small" style="bottom:5px; left:5px;">
@@ -441,6 +445,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
 
@@ -459,6 +464,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes small" style="top:255px; left:255px;">
@@ -476,6 +482,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes small" style="bottom:5px; left:255px;">
@@ -493,6 +500,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
 
@@ -511,6 +519,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes small" style="top:255px; left:505px;">
@@ -528,6 +537,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes small" style="bottom:5px; left:505px;">
@@ -545,6 +555,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
 
@@ -563,6 +574,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes longs" style="bottom:5px; right:5px;">
@@ -580,6 +592,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
             </div>
@@ -604,6 +617,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
 
@@ -622,6 +636,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes small" style="bottom:5px; left:255px;">
@@ -639,6 +654,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
 
@@ -657,6 +673,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
             </div>
@@ -681,6 +698,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes small" style="bottom:5px; left:5px;">
@@ -698,6 +716,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes small" style="bottom:5px; left:255px;">
@@ -715,6 +734,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
 
@@ -733,6 +753,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes longs" style="bottom:5px; right:255px;">
@@ -750,6 +771,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
                 <div class="cubes longs" style="bottom:5px; right:5px;">
@@ -767,6 +789,7 @@ $(function(){
                                 {{itemPrice}}
                             </a>
                         </div>
+                        {{itemAddToSC}}
                     </div>
                 </div>
 
