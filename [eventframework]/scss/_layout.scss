@@ -1,0 +1,30 @@
+.content {
+  position: relative;
+  width:100%;
+  height:auto;
+
+  & > div {
+      width:100%;
+      min-width:$min-w#{px};
+      max-width:$max-w#{px};
+      overflow:hidden;
+  }
+}
+
+.mainFocus {
+  position: relative;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.focusContent {
+  position: relative;
+  margin:0 auto;
+  height: 100%;
+}
+
+.prods {
+  position: relative;
+  margin:0 auto;
+  z-index:1000 \9;
+}
