@@ -49,6 +49,7 @@
         @include pie-clearfix;
     }
 
+    //立即購買 按鈕
     .buyNow {
         position: absolute;
         display: block;
@@ -69,5 +70,20 @@
         }
     }
 
-    
+    //加入購物車按鈕
+    .addCart {
+        position:absolute;
+        z-index:2 \9;
+        left:0;
+        top:0;
+        display: block;
+        content: "";
+        width: 70px;
+        height: 0;
+        padding-top: 70px;
+        overflow:hidden;
+        background-repeat:  no-repeat;
+    }
+
+
 }
