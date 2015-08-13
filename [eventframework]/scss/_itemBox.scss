@@ -1,5 +1,4 @@
 .itemBox {
-<<<<<<< HEAD
     &,
     & .pic,
     & .pic img {
@@ -9,23 +8,10 @@
     .pic,
     .pic img {
         z-index:-1 \9;
-=======
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    .pic,
-    .pic img {
-        position: relative;
-        z-index:-1;
-        width:100%;
-        height:100%;
->>>>>>> 1164c6016fea36165ef7bbf994d4f4e0ae610635
     }
 
     .txt {
         position: absolute;
-<<<<<<< HEAD
 
         a {
             text-decoration: none;
@@ -36,47 +22,12 @@
         p, h3, span {
             position: absolute;
             overflow:hidden;
-=======
-        bottom:0;
-        width: 96%;
-        height: 21%;
-        padding: 2%;
-
-        p, h3, span {
-            position: absolute;
-            bottom:0;
-            display: block;
-            margin:0;
-            padding:0;
-            overflow:hidden;
-        }
-
-        p {
-            width: 100%;
-            height: 25px;
-            overflow:hidden;
-
-            font-size: 18px;
-            letter-spacing: 1px;
-            line-height: 25px;
->>>>>>> 1164c6016fea36165ef7bbf994d4f4e0ae610635
         }
 
         span { font-family: arial; }
     }
 
-<<<<<<< HEAD
-=======
-    .txt a {
-        text-decoration: none;
-        display: block;
-        width:100%;
-        height:100%;
 
-        @include pie-clearfix;
-    }
-
->>>>>>> 1164c6016fea36165ef7bbf994d4f4e0ae610635
     //立即購買 按鈕
     .buyNow {
         position: absolute;
@@ -84,24 +35,10 @@
         text-align: center;
         cursor:pointer;
 
-<<<<<<< HEAD
         &.arrows:before {
             position: absolute;
             display: block;
             content: "";
-=======
-        &:before {
-            position: absolute;
-            z-index: 1;
-            right: 5px;
-            bottom:9px;
-            display: block;
-            content: "";
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 5px 0 5px 10px;
->>>>>>> 1164c6016fea36165ef7bbf994d4f4e0ae610635
         }
     }
 
@@ -109,16 +46,6 @@
     .addCart {
         position:absolute;
         z-index:2 \9;
-<<<<<<< HEAD
-=======
-        left:0;
-        top:0;
-        display: block;
-        content: "";
-        width: 70px;
-        height: 0;
-        padding-top: 70px;
->>>>>>> 1164c6016fea36165ef7bbf994d4f4e0ae610635
         overflow:hidden;
         background-repeat:  no-repeat;
     }
