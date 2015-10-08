@@ -1,3 +1,8 @@
+.wrapper {
+    background-position: center 60px;
+    background-repeat: no-repeat;
+}
+
 .content {
   position: relative;
   width:100%;
@@ -11,16 +16,36 @@
   }
 }
 
-.mainFocus { position: relative; }
+.mainFocus,
+.focusContent {
+    position: relative;
+}
+
+.mainFocus {
+    background-position: center -175px;
+    background-repeat: no-repeat;
+}
 
 .focusContent {
-  position: relative;
   margin:0 auto;
   height: 100%;
+  width: $min-w#{px};
 }
 
 .prods {
   position: relative;
   margin:0 auto;
   z-index:1000 \9;
+}
+
+.sp_content {
+    width: 100%;
+    height: auto;
+    & > div {
+        position: relative;
+        width: $min-w#{px};
+        min-width: $min-w#{px};
+        height: 100%;
+        margin:0 auto;
+    }
 }

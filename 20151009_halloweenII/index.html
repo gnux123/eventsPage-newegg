@@ -8,92 +8,104 @@
 
 <body>
 <base target="_blank">
-
-<link href="eventMain.css" rel="stylesheet" type="text/css" />
 <style>
-    .wrpaper { background: url(images/mainFocus.jpg) center top no-repeat; }
+body{margin:0;padding:0;font-family:arial, "微軟正黑體"}.wrapper{width:100%;min-width:1024px}.wrapper .mainPadding{margin:0 auto;margin-bottom:0px}a img{border:0}a.links{position:absolute;display:block}.wrapper{background-position:center 60px;background-repeat:no-repeat}.content{position:relative;width:100%;height:auto}.content>div{width:100%;min-width:1024px;max-width:1920px;overflow:hidden}.mainFocus,.focusContent{position:relative}.mainFocus{background-position:center -175px;background-repeat:no-repeat}.focusContent{margin:0 auto;height:100%;width:1024px}.prods{position:relative;margin:0 auto;z-index:1000 \9}.sp_content{width:100%;height:auto}.sp_content>div{position:relative;width:1024px;min-width:1024px;height:100%;margin:0 auto}.tables{position:relative;z-index:-1 \9;width:100%;height:100%}.tables .cubes{position:absolute}.tables .cubes .itemBox{position:relative;z-index:5 \9}.tables .cubes .itemBox a{position:relative;z-index:0 \9}.tables:after,.tables .cubes .itemBox:after{content:"";display:table;clear:both}.itemBox,.itemBox .pic,.itemBox .pic img{position:relative}.itemBox .pic,.itemBox .pic img{z-index:-1 \9}.itemBox .txt{position:absolute}.itemBox .txt a{text-decoration:none}.itemBox .txt a:after{content:"";display:table;clear:both}.itemBox .txt p,.itemBox .txt h3,.itemBox .txt span{position:absolute;overflow:hidden}.itemBox .txt span{font-family:arial}.itemBox .buyNow{position:absolute;display:block;text-align:center;cursor:pointer}.itemBox .buyNow.arrows:before{position:absolute;display:block;content:""}.itemBox .addCart{position:absolute;z-index:2 \9;overflow:hidden;background-repeat:no-repeat}.notice{position:relative;width:100%;min-width:1024px;height:auto;padding:60px 0}.noticeWrap{margin:0 auto;width:1024px;min-width:1024px;height:auto}.noticeWrap p a{text-decoration:none}.noticeWrap ol{margin-left:0;padding-left:25px}.noticeWrap ol li{margin:5px 0;line-height:20px;letter-spacing:0.5px}.itemBox,.itemBox .pic,.itemBox .pic img{width:100%;height:100%}.itemBox .txt{bottom:0;width:96%;height:21%;padding:2%}.itemBox .txt a{display:block;width:100%;height:100%}.itemBox .txt p,.itemBox .txt h3,.itemBox .txt span{display:block;bottom:0;margin:0;padding:0}.itemBox .txt p{display:block;width:100%;height:25px;font-size:18px;letter-spacing:1px;line-height:25px}.itemBox .buyNow.arrows:before{z-index:1;right:5px;bottom:9px;width:0;height:0;border-style:solid;border-width:5px 0 5px 10px}.itemBox .addCart{left:0;top:0;width:70px;height:0;padding-top:70px}.noticeWrap h2{font-size:18px}.noticeWrap p{font-size:16px;font-weight:lighter;letter-spacing:1px;line-height:30px}.mode01 .noticeWrap{width:1200px;padding-bottom:30px}.mode01 .noticeWrap h2{position:absolute;left:0;top:0;margin:0;display:block;width:100%;height:50px;font-size:18px;font-weight:bolder;letter-spacing:4px;line-height:50px;text-align:center}.mode01 .noticeWrap p{margin-top:60px}.mode02{padding:60px 0}.mode02 .noticeWrap{width:1280px}.mode02 .noticeWrap h2{margin:0;padding:10px;display:inline-block;font-weight:lighter;letter-spacing:4px}@media screen and (min-width: 0px) and (max-width: 1024px){.wrapper{overflow-x:hidden}.mainPadding .mainMenuArea{margin:0 0 0 15px}.focusContent,.noticeWrap{width:1024px}}@media screen and (min-width: 1025px) and (max-width: 1280px){.wrapper{overflow-x:hidden}.mainPadding .mainMenuArea{margin:0 0 0 15px}.footer{margin:0;width:100%}}
+
+
+    .wrapper { background-image: url(/img/Activity/20151009_halloweenII/mainFocus.jpg); }
 
     .mainFocus {
-        height:590px;
-        background: url(images/mainFocus.jpg) center top no-repeat; /*-175px*/
-    }
+        min-width: 1024px;
+        height:414px;
 
-    .focusContent { width: 1280px; }
+        background: url(/img/Activity/20151009_halloweenII/mainFocus.jpg); /*-175px*/
+    }
 
     .sp_links {
         height:130px;
-        background: url(images/hallo_bg_02.jpg) center top no-repeat;
+        background: url(/img/Activity/20151009_halloweenII/hallo_bg_02.jpg) center top no-repeat;
     }
 
     .sp_links a {
         position: relative;
         display: block;
-        width: 1280px;
+        width: 1024px;
+        min-width: 1024px;
         height: 100%;
         margin: 0 auto;
     }
 
     a.links {
         bottom: 50px;
-        width: 280px;
-        height: 280px;
+        width: 110px;
+        height: 48px;
+        overflow: hidden;
+        background: url(/img/Activity/20151009_halloweenII/areaLinks.png) no-repeat;
+        background-size: 100%;
+        transition-duration: 0.2s;
+        transform: scale(1);
     }
 
-    a.links.link01 { left: 115px; bottom:190px; }
-    a.links.link02 { left: 415px; bottom:150px; }
-    a.links.link03 { left: 695px; bottom:210px; }
+    a.links:hover { transform: scale(1.2); }
+
+    a.links.link01 { left: 300px; bottom:70px; }
+    a.links.link02 { background-position: 0px -48px; left: 400px; bottom:35px; }
+    a.links.link03 { background-position: 0px -96px; left: 520px; bottom:80px; }
+    a.links.link04 { background-position: 0px -144px; left: 620px; bottom:45px; }
 
 
     .mainProds01 {
         height:1020px;
-        background: url(images/hallo_bg_03.jpg) center no-repeat;
+        background: url(/img/Activity/20151009_halloweenII/hallo_bg_03.jpg) center no-repeat;
     }
 
     .mainProds02 {
         height:1055px;
-        background: url(images/hallo_bg_04.jpg) center no-repeat;
+        background: url(/img/Activity/20151009_halloweenII/hallo_bg_04.jpg) center no-repeat;
     }
 
     .mainProds03 {
         height:1160px;
-        background: url(images/hallo_bg_05.jpg) center no-repeat;
+        background: url(/img/Activity/20151009_halloweenII/hallo_bg_05.jpg) center no-repeat;
     }
 
-    .mainProds04 {
+    .content > div.mainProds04 {
         height:876px;
-        background: url(images/hallo_bg_06.jpg) center no-repeat;
+        overflow: inherit;
+        background: url(/img/Activity/20151009_halloweenII/hallo_bg_06.jpg) center no-repeat;
     }
 
-    .prods { width:1005px; }
+    .prods { width:1000px; }
 
-    .mainProds01 .prods { top:425px; height: 755px; }
-    .mainProds02 .prods { top:475px; height: 505px; }
-    .mainProds03 .prods { top:475px; height: 755px; }
+    .mainProds01 .prods { top:40px; height: 950px; }
+    .mainProds02 .prods { top:40px; height: 950px; }
+    .mainProds03 .prods { top:0px; height: 950px; }
+    .mainProds04 .prods { top:0px; height: 950px; }
 
-    .sp_content {
-        width: 100%;
-        height: auto;
-    }
-
-    .sp_content > div {
-        width: 1280px;
+    .mainProds01 .prods .tables,
+    .mainProds03 .prods .tables {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 635px;
         height: 100%;
-        margin:0 auto;
     }
+
+    .mainProds04 .prods .tables { top: -120px; }
 
     .sp01 {
         height: 452px;
-        background: url(images/hallo_bg_07.jpg) center no-repeat;
+        background: url(/img/Activity/20151009_halloweenII/hallo_bg_07.jpg) center no-repeat;
     }
 
     .sp02 {
         height: 450px;
-        background: url(images/hallo_bg_08.jpg) center no-repeat;
+        background: url(/img/Activity/20151009_halloweenII/hallo_bg_08.jpg) center no-repeat;
     }
 
     .sp03 {
         height: 267px;
-        background: url(images/hallo_bg_09.jpg) center no-repeat;
+        background: url(/img/Activity/20151009_halloweenII/hallo_bg_09.jpg) center no-repeat;
     }
 
     /* tables settings */
@@ -106,7 +118,7 @@
 
     .tables .cubes {
         position: absolute;
-        background: #fff;
+        background: rgba(255,255,255, .6);
     }
 
     .tables .cubes .itemBox {
@@ -125,7 +137,6 @@
         height: 0;
         padding-top:70px;
         overflow:hidden;
-        background-image: url(/img/Activity/20150813_3C01/icons.png);
         background-repeat: no-repeat;
         cursor:pointer;
     }
@@ -135,26 +146,25 @@
         z-index: 0;
     }
 
-    .mainProds01 .itemBox .buyNow { background-position: 0 0; }
-    .mainProds02 .itemBox .buyNow { background-position: 0 -70px; }
-    .mainProds03 .itemBox .buyNow { background-position: 0 -140px; }
-
-    .mainProds01 .itemBox .txt p { color: #ab7bca; }
-    .mainProds02 .itemBox .txt p { color: #468f87; }
-    .mainProds03 .itemBox .txt p { color: #3083b8; }
-
-
-    .tables .small {
-        width:245px;
-        height:245px;
+    .cubes.small {
+        width:203px;
+        height:308px;
+        border: 1px solid #d1964a;
     }
 
-    .tables .longs {
+
+    .cubes.big {
+        width: 338px;
+        height: 453px;
+        border: 1px solid #d1964a;
+    }
+
+    .cubes.longs {
         width: 245px;
         height: 495px;
     }
 
-    .tables .wides {
+    .cubes.wides {
         width: 495px;
         height: 245px;
     }
@@ -164,13 +174,115 @@
         height: 495px;
     }
 
+    .cubes.small .itemBox .pic {
+        top: 15px;
+        width: 175px;
+        height: 175px;
+        overflow:hidden;
+        margin: 0px 15px;
+    }
+
+    .cubes.big .itemBox .pic {
+        top: 24px;
+        width: 290px;
+        height: 290px;
+        overflow:hidden;
+        margin: 0px 24px;
+    }
+
+    .cubes.tables .big .itemBox .pic img { position: absolute; }
+
+    .cubes.big .itemBox .txt,
+    .cubes.small .itemBox .txt {
+        position: relative;
+        bottom: auto;
+        margin: 15px auto 5px auto;
+    }
+
+    .cubes.big .itemBox .txt { margin-top: 20px; }
+
+    .cubes.big .itemBox .txt { width: 290px; }
+    .cubes.small .itemBox .txt { width: 175px; }
+
+    .cubes.big .itemBox .txt h3,
+    .cubes.small .itemBox .txt h3 {
+        position: relative;
+        width: 100%;
+        height: 54px;
+
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+    }
+
+    .cubes.big .itemBox .txt h3 {
+        height: 60px;
+        margin-bottom: 10px;
+
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+
+    .cubes.big .itemBox .txt span.price,
+    .cubes.small .itemBox .txt span.price {
+        position: relative;
+        width: 100%;
+        height: 25px;
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .cubes.big .itemBox .txt span.price {
+        height: 25px;
+        font-size: 23px;
+    }
+
+    .tables .cubes.big .itemBox .buyNow,
+    .tables .cubes.big .itemBox .spShop,
+    .tables .cubes.small .itemBox .buyNow,
+    .tables .cubes.small .itemBox .spShop {
+        position: absolute;
+        bottom: 7px;
+        width: 96px;
+        height: 0;
+        padding-top: 26px;
+        overflow: hidden;
+        background: url(/img/Activity/20151009_halloweenII/btns.png) no-repeat;
+    }
+
+    .tables .cubes.big .itemBox .buyNow,
+    .tables .cubes.small .itemBox .buyNow {
+        top: auto;
+        left: auto;
+        right: 10px;
+
+        background-position: right top;
+    }
+
+    .tables .cubes.big .itemBox .spShop,
+    .tables .cubes.small .itemBox .spShop {
+        bottom: 7px;
+        left: 10px;
+        background-position: left top;
+    }
+
+    .tables .cubes.big .itemBox .spShop {
+        left: auto;
+        right: 96px;
+    }
+
+
+
     /* cubes-longs settings */
     .tables .longs .itemBox .pic,
     .tables .longs .itemBox .pic a,
     .tables .wides .itemBox .pic,
     .tables .wides .itemBox .pic a,
     .tables .wilds .itemBox .pic,
-    .tables .wilds .itemBox .pic a {
+    .tables .wilds .itemBox .pic a,
+    .tables .big .itemBox .pic a {
         position: relative;
         display:block;
         width:100%;
@@ -186,11 +298,10 @@
         top:50%;
     }
 
+    .tables .big .itemBox .pic img,
     .tables .small .itemBox .pic img {
-        top:0;
-        margin-left: 12.5%;
-        width: 75%;
-        height: 75%;
+        max-width: 100%;
+        height: auto;
     }
 
     .tables .longs .itemBox .pic img {
@@ -251,47 +362,25 @@
 
 
     /* notice settings */
-    .notice {
-        position: relative;
-        width:100%;
-        height:auto;
-        padding:60px 0;
-        background: #000 url(images/hallo_notice_bg_10.jpg) center top no-repeat;
+
+    .arealists {
+        position: absolute;
+        right: 330px;
+        top: 240px;
+        display: block;
+        width: 50px;
+        height: 18px;
     }
 
+    .notice { background: url(/img/Activity/20151009_halloweenII/hallo_notice_bg_10.jpg) center top no-repeat; }
 
-    .noticeWrap {
-        margin:0 auto;
-        width:1280px;
-        height:auto;
+    .noticeWrap ol {
+        list-style: inherit;
+        list-style-type: decimal;
     }
 
-    /* resposive web design */
-    @media screen and (min-width:0px) and (max-width: 1024px) {
+    .noticeWrap ol li { color: #000; }
 
-        .wrapper { overflow-x:hidden; }
-        .mainPadding .mainMenuArea { margin:0 0 0 15px; }
-        .focusContent,
-        .noticeWrap { width:1024px; }
-
-        a.links.link01 { left: 0px; }
-        a.links.link02 { left: 290px; }
-        a.links.link03 { left: 580px; }
-
-        .footer {
-            margin:0;
-            width: 100%;
-        }
-    }
-
-    @media screen and (min-width:1025px) and (max-width: 1280px) {
-        .wrapper { overflow-x:hidden; }
-        .mainPadding .mainMenuArea { margin:0 0 0 15px; }
-        .footer {
-            margin:0;
-            width: 100%;
-        }
-    }
 
 </style>
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -302,6 +391,24 @@ $(function(){
         var $target = $(this).attr("class").split(" ").pop().split("link").pop();
         smoothScroll($target);
       });
+    });
+
+    $(".sp_links a").click(function(){
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+        $body.animate({
+          scrollTop: $('.sp01').offset().top
+        }, 1500);
+        return false;
+    });
+
+    $("a.arealists").click(function(){
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+        $body.animate({
+          scrollTop: $('.sp02').offset().top
+        }, 1500);
+        return false;
     });
 
     $(document).ready(function(){
@@ -326,194 +433,207 @@ $(function(){
         <a href="javascript:void(0);" class="links link01"></a>
         <a href="javascript:void(0);" class="links link02"></a>
         <a href="javascript:void(0);" class="links link03"></a>
+        <a href="javascript:void(0);" class="links link04"></a>
       </div>
     </div>
     <div class="sp_links">
-        <a href="#"></a>
+        <a href="/item?itemid="></a>
     </div>
     <div class="mainProds01">
         <div class="prods prods01">
             <div class="tables">
-                <div class="cubes longs" style="top:5px; left:5px;">
-                    <div class="itemBox" data-itemid="104210">
-                        <div class="pic">
+                <div class="cubes big" style=" top:320px; left: -350px;">
+                    <div class="itemBox" data-itemid="108670">
+                        <div class="pic ">
                             <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
-
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
-                        {{itemAddToSC}}
-                    </div>
-                </div>
-                <div class="cubes small" style="bottom:5px; left:5px;">
-                    <div class="itemBox" data-itemid="465748">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
-
-                            </a>
-                        </div>
-                        <div class="txt">
-                            <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
-                                <h3>{{itemName_50}}</h3>
-                                {{itemPrice}}
-                            </a>
-                        </div>
+                        <a class="spShop" href="/item?itemid=482511">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
 
-                <div class="cubes small" style="top:5px; left:255px;">
-                    <div class="itemBox" data-itemid="70563">
-                        <div class="pic">
+                <div class="cubes small" style=" top:0; left: 0; ">
+                    <div class="itemBox" data-itemid="108635">
+                        <div class="pic ">
                             <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
-                                <h3>{{itemName_50}}</h3>
-                                {{itemPrice}}
-                            </a>
-                        </div>
-                        {{itemAddToSC}}
-                    </div>
-                </div>
-                <div class="cubes small" style="top:255px; left:255px;">
-                    <div class="itemBox" data-itemid="442803">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
-                            </a>
-                        </div>
-                        <div class="txt">
-                            <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
-                        {{itemAddToSC}}
-                    </div>
-                </div>
-                <div class="cubes small" style="bottom:5px; left:255px;">
-                    <div class="itemBox" data-itemid="450573">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
-
-                            </a>
-                        </div>
-                        <div class="txt">
-                            <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
-                                <h3>{{itemName_50}}</h3>
-                                {{itemPrice}}
-                            </a>
-                        </div>
+                        <a class="spShop" href="/item?itemid=482505">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
 
-                <div class="cubes small" style="top:5px; left:505px;">
-                    <div class="itemBox" data-itemid="465875">
-                        <div class="pic">
+                <div class="cubes small" style=" top:0; left: 215px;">
+                    <div class="itemBox" data-itemid="131997">
+                        <div class="pic ">
                             <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
-                                <h3>{{itemName_50}}</h3>
-                                {{itemPrice}}
-                            </a>
-                        </div>
-                        {{itemAddToSC}}
-                    </div>
-                </div>
-                <div class="cubes small" style="top:255px; left:505px;">
-                    <div class="itemBox" data-itemid="465888">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
-                            </a>
-                        </div>
-                        <div class="txt">
-                            <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
-                        {{itemAddToSC}}
-                    </div>
-                </div>
-                <div class="cubes small" style="bottom:5px; left:505px;">
-                    <div class="itemBox" data-itemid="464807">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
-
-                            </a>
-                        </div>
-                        <div class="txt">
-                            <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
-                                <h3>{{itemName_50}}</h3>
-                                {{itemPrice}}
-                            </a>
-                        </div>
+                        <a class="spShop" href="/item?itemid=482512">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
 
-                <div class="cubes small" style="top:5px; right:5px;">
-                    <div class="itemBox" data-itemid="451099">
-                        <div class="pic">
+                <div class="cubes small" style=" top:0; right: 0; ">
+                    <div class="itemBox" data-itemid="433052">
+                        <div class="pic ">
                             <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
+
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
+                        <a class="spShop" href="/item?itemid=482704">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
-                <div class="cubes longs" style="bottom:5px; right:5px;">
-                    <div class="itemBox" data-itemid="122449">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                <div class="cubes small" style=" top:320px; left: 0; ">
+                    <div class="itemBox" data-itemid="480502">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
+
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
+                        <a class="spShop" href="/item?itemid=482528">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+
+                <div class="cubes small" style=" top:320px; left: 215px; ">
+                    <div class="itemBox" data-itemid="473966">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482508">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+
+                <div class="cubes small" style=" top:320px; right: 0px;">
+                    <div class="itemBox" data-itemid="475141">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482638">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+
+                <div class="cubes small" style=" top:640px; left: 0px;">
+                    <div class="itemBox" data-itemid="476311">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482639">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:640px; left: 215px;">
+                    <div class="itemBox" data-itemid="482179">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482526">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:640px; right:0px;">
+                    <div class="itemBox" data-itemid="117349">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482527">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
@@ -524,77 +644,195 @@ $(function(){
     <div class="mainProds02">
         <div class="prods prods02">
             <div class="tables">
-                <div class="cubes longs" style="top:5px; left:5px;">
-                    <div class="itemBox" data-itemid="465269">
-                        <div class="pic">
+                <div class="cubes small" style=" top:0; right: 215px; ">
+                    <div class="itemBox" data-itemid="124280">
+                        <div class="pic ">
                             <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
+
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
+                        <a class="spShop" href="/item?itemid=482634">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:0; right: 0px;">
+                    <div class="itemBox" data-itemid="120029">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=474792">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
 
-                <div class="cubes small" style="top:5px; left:255px;">
-                    <div class="itemBox" data-itemid="466448">
-                        <div class="pic">
+                <div class="cubes small" style=" top:320px; left:0px; ">
+                    <div class="itemBox" data-itemid="120032">
+                        <div class="pic ">
                             <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
+
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
+                        <a class="spShop" href="/item?itemid=474795">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
-                <div class="cubes small" style="bottom:5px; left:255px;">
-                    <div class="itemBox" data-itemid="440454">
+                <div class="cubes small" style=" top:320px; left:215px;">
+                    <div class="itemBox" data-itemid="468190">
                         <div class="pic">
                             <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
+
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
+                        <a class="spShop" href="/item?itemid=482628">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:320px; left:430px; ">
+                    <div class="itemBox" data-itemid="120063">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=474814">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:320px; left:645px; ">
+                    <div class="itemBox" data-itemid="477791">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482669">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
 
-                <div class="cubes wilds" style="bottom:5px; right:5px;">
-                    <div class="itemBox" data-itemid="119988">
-                        <div class="pic">
+                <div class="cubes small" style=" top:640px; right: 645px;">
+                    <div class="itemBox" data-itemid="432365">
+                        <div class="pic ">
                             <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
+
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
+                        <a class="spShop" href="/item?itemid=482513">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:640px; right: 430px;">
+                    <div class="itemBox" data-itemid="472216">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482630">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:640px; right: 215px;">
+                    <div class="itemBox" data-itemid="468184">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482632">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:640px; right: 0px;">
+                    <div class="itemBox" data-itemid="475749">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482640">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
@@ -605,127 +843,399 @@ $(function(){
     <div class="mainProds03">
         <div class="prods prods03">
             <div class="tables">
-                <div class="cubes wilds" style="top:5px; left:5px;">
-                    <div class="itemBox" data-itemid="138106">
-                        <div class="pic">
+                <div class="cubes big" style=" top:175px; left: -350px;">
+                    <div class="itemBox" data-itemid="464977">
+                        <div class="pic ">
                             <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
+                        <a class="spShop" href="/item?itemid=482514">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
-                <div class="cubes small" style="bottom:5px; left:5px;">
-                    <div class="itemBox" data-itemid="442518">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                <div class="cubes small" style=" top:0; left: 0; ">
+                    <div class="itemBox" data-itemid="465068">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
+
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
+                        <a class="spShop" href="/item?itemid=482515">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
-                <div class="cubes small" style="bottom:5px; left:255px;">
-                    <div class="itemBox" data-itemid="457636">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                <div class="cubes small" style=" top:0; left: 215px;">
+                    <div class="itemBox" data-itemid="465034">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
+
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
+                        <a class="spShop" href="/item?itemid=482516">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
 
-                <div class="cubes wides" style="top:5px; right:5px;">
-                    <div class="itemBox" data-itemid="134385">
-                        <div class="pic">
+                <div class="cubes small" style=" top:0; right: 0; ">
+                    <div class="itemBox" data-itemid="443656">
+                        <div class="pic ">
                             <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
+
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
+                        <a class="spShop" href="/item?itemid=482641">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
-                <div class="cubes longs" style="bottom:5px; right:255px;">
-                    <div class="itemBox" data-itemid="465834">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                <div class="cubes small" style=" top:320px; left: 0; ">
+                    <div class="itemBox" data-itemid="439913">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
+
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
+                        <a class="spShop" href="/item?itemid=482643">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
-                <div class="cubes longs" style="bottom:5px; right:5px;">
-                    <div class="itemBox" data-itemid="128511">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" />
 
+                <div class="cubes small" style=" top:320px; left: 215px; ">
+                    <div class="itemBox" data-itemid="471963">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
                             </a>
                         </div>
                         <div class="txt">
                             <a href="{{itemLink}}" target="_blank">
-                                <p>{{itemSubTitle}}</p>
+
                                 <h3>{{itemName_50}}</h3>
                                 {{itemPrice}}
                             </a>
                         </div>
+                        <a class="spShop" href="/item?itemid=482642">專人送禮</a>
                         {{itemAddToSC}}
                     </div>
                 </div>
 
+                <div class="cubes small" style=" top:320px; right: 0px;">
+                    <div class="itemBox" data-itemid="467199">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482524">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+
+                <div class="cubes small" style=" top:640px; left: 0px;">
+                    <div class="itemBox" data-itemid="443495">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482644">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:640px; left: 215px;">
+                    <div class="itemBox" data-itemid="467163">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482525">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:640px; right:0px;">
+                    <div class="itemBox" data-itemid="465064">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        <a class="spShop" href="/item?itemid=482529">專人送禮</a>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="mainProds04">
         <div class="prods prods04">
+            <div class="tables">
+                <div class="cubes small" style=" top:0; left:430px; ">
+                    <div class="itemBox" data-itemid="471995">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:0; left: 645px;">
+                    <div class="itemBox" data-itemid="134278">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+
+                <div class="cubes small" style=" top:320px; left:0px; ">
+                    <div class="itemBox" data-itemid="433408">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:320px; left:215px;">
+                    <div class="itemBox" data-itemid="468335">
+                        <div class="pic">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:320px; left:430px; ">
+                    <div class="itemBox" data-itemid="470087">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:320px; left:645px; ">
+                    <div class="itemBox" data-itemid="474989">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+
+                <div class="cubes small" style=" top:640px; right: 645px;">
+                    <div class="itemBox" data-itemid="473142">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:640px; right: 430px;">
+                    <div class="itemBox" data-itemid="472803">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:640px; right: 215px;">
+                    <div class="itemBox" data-itemid="472809">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+                <div class="cubes small" style=" top:640px; right: 0px;">
+                    <div class="itemBox" data-itemid="475367">
+                        <div class="pic ">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="itemImgCen">
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <a href="{{itemLink}}" target="_blank">
+
+                                <h3>{{itemName_50}}</h3>
+                                {{itemPrice}}
+                            </a>
+                        </div>
+                        {{itemAddToSC}}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="sp_content sp01">
-        <div></div>
+        <div>
+            <a href="javascript:void(0);" class="arealists"></a>
+        </div>
     </div>
 
     <div class="sp_content sp02"></div>
@@ -733,17 +1243,19 @@ $(function(){
 
     <div class="notice">
       <div class="noticeWrap">
-        <h2>注意事項與規則</h2>
-        <p>
-          1. 折價券／回饋金僅限原註冊會員，依「折價券／回饋金使用辦法」於有效期限內（逾期失效，恕不補發），在新蛋全球生活網消費時使用，恕無法轉讓或合併，部分活動或商品無法折抵使用，亦無法折換現金、找零或交換其他商品及折換其他贈品，且無法抵扣物流、安裝、服務、稅賦等費用。<br/>
-          2. 折價券／回饋金之使用方式與注意事項，請參閱「我的帳戶><a href="/MyAccount/Coupon" target="_blank">我的折價券</a>/回饋金」使用辦法。<br/>
-          3. 專案活動及優惠方案（如其他折扣、滿額折、折價券、回饋金）不可合併使用，會員若同時擁有兩種優惠，只能擇一進行折抵。（如該活動已有滿額折，則折價券／回饋金皆無法使用）<br/>
-          4. 折價券／回饋金折抵部分不再另外開立發票，開立發票金額以該訂單「實際支付金額」計算。<br/>
-          5. 商品顏色因電腦螢幕之設定會略有不同，以實際出貨商品顏色為準。<br/>
-          6. 產品數量有限，售完為止。<br/>
-          7. 新蛋全球生活網將保留隨時變更、修改與解釋或終止本「折價券／回饋金使用辦法」之權利，若有異動及修改，將在本網站上公布，恕不另行個別通知。<br/>
-          8. 若您有任何疑問，歡迎歡迎<a href="mailto:service@newegg.com.tw">來信</a>，我們將於1～2日內（不含例假日）以E-mail回覆您，或請致電客服人員。02-8175 5996  08:30am～17:30pm
-        </p>
+        <h2>活動注意事項</h2>
+        <ol>
+            <li><span style="font-weight:bold;">滿額折期間，全站滿額現折最高回饋上限$2000<br />滿額條件：全站結帳滿$2,000(含)現折$200元，滿$3,000(含)現折$300元，以此類推，滿10,000(含)至19,999(含)現折$1,000元，滿20,000以上(含)現折$2000元。</span><br />滿額折活動限會員參加，每一帳號每日限參加一次。相關說明請參照各活動頁面說明，部分商品不適用。採單一門檻回饋，恕不累折，亦不可跨活動計算折價，相關優惠將以購物車結帳時計算金額為主。</li>
+            <li><span style="color:#f00;">翻玩料理美食區將不參加專人送禮專屬服務。</span></li>
+            <li>折價券僅限原註冊會員，依「折價券使用辦法」於有效期限內（逾期失效，恕不補發），在新蛋全球生活網消費時使用，恕無法轉讓或合併，部分活動或商品無法折抵使用，亦無法折換現金、找零或交換其他商品及折換其他贈品，且無法抵扣物流、安裝、服務、稅賦等費用。</li>
+            <li>折價券之使用方式與注意事項，請參閱「我的帳戶><a href="/MyAccount/Coupon" target="_blank">我的折價券</a>」使用辦法。</li>
+            <li>專案活動及優惠方案（如其他折扣、滿額折、折價券）不可合併使用，會員若同時擁有兩種優惠，只能擇一進行折抵。（如該活動已有滿額折，則折價券無法使用）</li>
+            <li>參加消費滿額折之商品，若事後取消訂單或辦理退貨，須將所有參加滿額折商品一併退貨，並僅會退還您實際支付的金額。折價券折抵部分不再另外開立發票，開立發票金額以該訂單「實際支付金額」計算。</li>
+            <li>商品顏色因電腦螢幕之設定會略有不同，以實際出貨商品顏色為準。</li>
+            <li>商品數量有限，售完為止。</li>
+            <li>新蛋全球生活網將保留隨時變更、修改與解釋或終止本「折價券使用辦法」之權利，若有異動及修改，將在本網站上公布，恕不另行個別通知。</li>
+            <li>若您有任何疑問，歡迎<a href="mailto:service@newegg.com.tw" target="_self">來信</a>，我們將於1～2日內（不含例假日）以E-mail回覆您，或請於上班時間（8:30～17:30）來電（02-8175- 5996）。</li>
+        </ol>
       </div>
     </div>
     </div>
