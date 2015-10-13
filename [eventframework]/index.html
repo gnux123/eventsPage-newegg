@@ -11,15 +11,23 @@
 
 <link href="eventMain.css" rel="stylesheet" type="text/css" />
 <style>
-    .wrpaper { background: url(/img/Activity/20150813_3C01/mainFocus.jpg) center top no-repeat; }
-
+    .wrapper,
     .mainFocus {
-        height:684px;
-        background: url(/img/Activity/20150813_3C01/mainFocus.jpg) center -175px no-repeat;
+        background: url(/img/Activity/20150813_3C01/mainFocus.jpg); /*需放入刊頭主視覺*/
     }
 
+    /*如果沒有最上方橫幅AD需使用此設定
+    .wrapper { background-position: center top; }
+    */
+
+    /* 刊頭主視覺外框高度 */
+    .mainFocus { height:684px; /* 原始圖像高度減掉175px */ }
+
+    /* 刊頭主視覺內框寬度設定 */
     .focusContent { width: 1280px; }
 
+
+    /* 刊頭主視覺連結設定 */
     a.links {
         bottom: 50px;
         width: 280px;
@@ -30,45 +38,33 @@
     a.links.link02 { left: 415px; bottom:150px; }
     a.links.link03 { left: 695px; bottom:210px; }
 
+    /* #各分類主題外框設定 */
     .mainProds01 {
-        height:1390px;
-        background: url(/img/Activity/20150813_3C01/3c01bg_01.jpg) center no-repeat;
+        height:1390px; /* 各分類主題高度 */
+        background: url(/img/Activity/20150813_3C01/3c01bg_01.jpg); /* 各分類主題背景 */
     }
 
     .mainProds02 {
-        height:1255px;
-        background: url(/img/Activity/20150813_3C01/3c01bg_02.jpg) center no-repeat;
+        height:1255px; /* 各分類主題高度 */
+        background: url(/img/Activity/20150813_3C01/3c01bg_02.jpg); /* 各分類主題背景 */
     }
 
     .mainProds03 {
-        height:1500px;
-        background: url(/img/Activity/20150813_3C01/3c01bg_03.jpg) center no-repeat;
+        height:1500px; /* 各分類主題背景 */
+        background: url(/img/Activity/20150813_3C01/3c01bg_03.jpg); /* 各分類主題背景 */
     }
 
-    .prods { width:1005px; }
+    /* ##各分類主題內框寬度設定 */
+    .prods { width:1005px; /* 各分類主題內框共用寬度設定 */ }
 
+    /* 各分類主題內框位置及背景顏色設定 */
     .mainProds01 .prods { top:425px; height: 755px; background-color: #ffe910; }
     .mainProds02 .prods { top:475px; height: 505px; background-color: #57d3c0; }
     .mainProds03 .prods { top:475px; height: 755px; background-color: #fa7497; }
 
 
     /* tables settings */
-    .tables {
-        position: relative;
-        z-index: -1;
-        width:100%;
-        height: 100%;
-    }
-
-    .tables .cubes {
-        position: absolute;
-        background: #fff;
-    }
-
-    .tables .cubes .itemBox {
-        position: relative;
-        z-index:5;
-    }
+    .tables .cubes { background: #fff; }
 
     .tables .cubes .itemBox .buyNow {
         position: absolute;
@@ -208,25 +204,12 @@
 
     /* notice settings */
     .notice {
-        position: relative;
-        width:100%;
-        height:auto;
-        padding:60px 0;
-        background: #000 url(/img/Activity/20150813_3C01/notice_bg.gif) no-repeat;
+        background: #000 url(/img/Activity/20150813_3C01/notice_bg.gif);
     }
 
-
-    .noticeWrap {
-        margin:0 auto;
-        width:1280px;
-        height:auto;
-    }
 
     /* resposive web design */
     @media screen and (min-width:0px) and (max-width: 1024px) {
-
-        .wrapper { overflow-x:hidden; }
-        .mainPadding .mainMenuArea { margin:0 0 0 15px; }
         .focusContent,
         .noticeWrap { width:1024px; }
 
@@ -234,19 +217,6 @@
         a.links.link02 { left: 290px; }
         a.links.link03 { left: 580px; }
 
-        .footer {
-            margin:0;
-            width: 100%;
-        }
-    }
-
-    @media screen and (min-width:1025px) and (max-width: 1280px) {
-        .wrapper { overflow-x:hidden; }
-        .mainPadding .mainMenuArea { margin:0 0 0 15px; }
-        .footer {
-            margin:0;
-            width: 100%;
-        }
     }
 
 </style>

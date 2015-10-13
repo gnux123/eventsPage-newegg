@@ -9,6 +9,7 @@
   height:auto;
 
   & > div {
+      margin:0 auto;
       width:100%;
       min-width:$min-w#{px};
       max-width:$max-w#{px};
