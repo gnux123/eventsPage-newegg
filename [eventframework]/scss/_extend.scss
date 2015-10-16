@@ -2,7 +2,7 @@
 .itemBox {
     &,
     & .pic,
-    & .pic img {
+    & .pic a {
         width: 100%;
         height: 100%;
     }
@@ -21,7 +21,6 @@
 
         p, h3, span {
             display: block;
-            bottom:0;
             margin:0;
             padding:0;
         }
