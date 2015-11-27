@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link href="/Themes/css/ActivityBase.css" rel="stylesheet" type="text/css" />
-<title>20151116_blackfriday</title>
+<title>20151201_thanks</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@ body{margin:0;padding:0;font-family:arial, "微軟正黑體"}.wrapper{width:100%
 
     .wrapper,
     .mainFocus {
-        background-image: url(/img/Activity/20151116_blackfriday/mainFocus.jpg); /*需放入刊頭主視覺*/
+        background-image: url(20151201_thanks/mainFocus.jpg); /*需放入刊頭主視覺*/
     }
 
     .content {
@@ -35,9 +35,72 @@ body{margin:0;padding:0;font-family:arial, "微軟正黑體"}.wrapper{width:100%
 
     /* 刊頭主視覺外框高度 */
     .mainFocus {
-        height:505px; /* 原始圖像高度減掉175px */
+        height:503px; /* 原始圖像高度減掉175px */
         background-color: #fff;
     }
+
+    .eleActive {
+        width: 50px;
+        height: auto;
+        margin-left: -52px;
+    }
+
+    .eleActive ul {
+        display: block;
+        width: 50px;
+        height: auto;
+    }
+
+    .eleActive ul li {
+        display: block;
+        width: 50px;
+        height: 50px;
+
+        margin-top: 10px;
+    }
+
+    .eleActive ul li a {
+        display: block;
+        width: 46px;
+        height: 46px;
+        border: 2px solid #fff;
+
+        text-align: center;
+        line-height: 24px;
+        color:#fff;
+        text-decoration: none;
+    }
+
+    .eleActive ul li > a.goTop,
+    .eleActive ul li > a.goEnd {
+        border:0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .eleActive ul li.active a.cates01,
+    .eleActive ul li.active a.cates02,
+    .eleActive ul li.active a.cates03 {
+        background: #a20c45;
+        border: 2px solid #a20c45;
+    }
+
+    .eleActive ul li.active a.cates04,
+    .eleActive ul li.active a.cates05,
+    .eleActive ul li.active a.cates06,
+    .eleActive ul li.active a.cates07 {
+        background: #f29600;
+        border: 2px solid #f29600;
+    }
+
+    .eleActive ul li.active a.cates08,
+    .eleActive ul li.active a.cates09,
+    .eleActive ul li.active a.cates10 {
+        background: #066fb7;
+        border: 2px solid #066fb7;
+    }
+
+    .eleActive ul li:first-child { margin-top:0; }
 
     /* 刊頭主視覺內框寬度設定 */
     .focusContent { width: 1280px; }
@@ -56,6 +119,7 @@ body{margin:0;padding:0;font-family:arial, "微軟正黑體"}.wrapper{width:100%
     }*/
 
 
+
     /* ##各分類主題內框寬度設定 */
     .prods {
         width: 1026px; /* 各分類主題內框共用寬度設定 */
@@ -70,64 +134,55 @@ body{margin:0;padding:0;font-family:arial, "微軟正黑體"}.wrapper{width:100%
         display: none;
     }
 
-    .content > div.mainProds01,
-    .content > div.mainProds02,
-    .content > div.mainProds03,
-    .content > div.mainProds04,
-    .content > div.mainProds05,
-    .content > div.mainProds06,
-    .content > div.mainProds07,
-    .content > div.mainProds08,
-    .content > div.mainProds09,
-    .content > div.mainProds10,
-    .content > div.mainProds11,
-    .content > div.mainProds12,
-    .content > div.mainProds13 {
-        height:950px;
-        overflow: initial;
+    .content > div.mainProds01 {
+        height: 1186px;
+        background: url(20151201_thanks/main_01.jpg) center no-repeat;
     }
 
-    .mainProds01,
-    .mainProds03,
-    .mainProds05,
-    .mainProds07,
-    .mainProds09,
-    .mainProds11,
-    .mainProds13 {
-        background: url(/img/Activity/20151116_blackfriday/main_01.jpg) #000 center no-repeat;
+    .content > div.mainProds02 {
+        height: 1667px;
+        background: url(20151201_thanks/main_02.jpg) center no-repeat;
     }
 
-    .mainProds02,
-    .mainProds04,
-    .mainProds06,
-    .mainProds08,
-    .mainProds10,
-    .mainProds12 {
-        background: url(/img/Activity/20151116_blackfriday/main_02.jpg) #000 center no-repeat;
+    .content > div.cate01 {
+        height: 1150px;
+        background: url(20151201_thanks/cate01.jpg) center no-repeat;
     }
 
-    .mainProds01 .longs:before { background-position: 0 0; }
-    .mainProds02 .longs:before { background-position: 0 -160px; }
-    .mainProds03 .longs:before { background-position: 0 -320px; }
-    .mainProds04 .longs:before { background-position: 0 -480px; }
-    .mainProds05 .longs:before { background-position: 0 -640px; }
-    .mainProds06 .longs:before { background-position: 0 -800px; }
-    .mainProds07 .longs:before { background-position: 0 -960px; }
-    .mainProds08 .longs:before { background-position: 0 -1120px; }
-    .mainProds09 .longs:before { background-position: 0 -1280px; }
-    .mainProds10 .longs:before { background-position: 0 -1440px; }
-    .mainProds11 .longs:before { background-position: 0 -1600px; }
-    .mainProds12 .longs:before { background-position: 0 -1760px; }
-    .mainProds13 .longs:before { background-position: 0 -1920px; }
+    .content > div.cate02,
+    .content > div.cate03,
+    .content > div.cate04,
+    .content > div.cate05,
+    .content > div.cate06,
+    .content > div.cate07,
+    .content > div.cate08,
+    .content > div.cate09 {
+        height: 951px;
+    }
+
+    .content > div.cate02 { background: url(20151201_thanks/cate02.jpg) center no-repeat; }
+    .content > div.cate03 { background: url(20151201_thanks/cate03.jpg) center no-repeat; }
+    .content > div.cate04 { background: url(20151201_thanks/cate04.jpg) center no-repeat; }
+    .content > div.cate05 { background: url(20151201_thanks/cate05.jpg) center no-repeat; }
+    .content > div.cate06 { background: url(20151201_thanks/cate06.jpg) center no-repeat; }
+    .content > div.cate07 { background: url(20151201_thanks/cate07.jpg) center no-repeat; }
+    .content > div.cate08 { background: url(20151201_thanks/cate08.jpg) center no-repeat; }
+    .content > div.cate09 { background: url(20151201_thanks/cate09.jpg) center no-repeat; }
+
+    .content > div.cate10 {
+        height: 938px;
+        background: url(20151201_thanks/cate10.jpg) center no-repeat;
+    }
 
 
     .linksWrap {
         width: 100%;
-        height: 85px;
+        height: 89px;
+        background-color: #9b1b4b;
     }
 
     .linksContent {
-        width: 1040px;
+        width: 1134px;
         height: 100%;
         margin:0 auto;
         clear: both;
@@ -138,69 +193,16 @@ body{margin:0;padding:0;font-family:arial, "微軟正黑體"}.wrapper{width:100%
         position: relative;
         float:left;
         display: block;
-        width: 80px;
+        width: 378px;
         height: 85px;
         overflow: hidden;
-        background-image: url(/img/Activity/20151116_blackfriday/link-text.png);
+        background-image: url(20151201_thanks/linksBtn.gif);
         background-repeat: no-repeat;
     }
 
     a.links.link01 { background-position: 0 0; }
-    a.links.link02 { background-position: -80px 0; }
-    a.links.link03 { background-position: -160px 0; }
-    a.links.link04 { background-position: -240px 0; }
-    a.links.link05 { background-position: -320px 0; }
-    a.links.link06 { background-position: -400px 0; }
-    a.links.link07 { background-position: -480px 0; }
-    a.links.link08 { background-position: -560px 0; }
-    a.links.link09 { background-position: -640px 0; }
-    a.links.link10 { background-position: -720px 0; }
-    a.links.link11 { background-position: -800px 0; }
-    a.links.link12 { background-position: -880px 0; }
-    a.links.link13 { background-position: -960px 0; }
-
-    a.links.link01,
-    a.links.link03,
-    a.links.link05,
-    a.links.link07,
-    a.links.link09,
-    a.links.link11,
-    a.links.link13 {
-        background-color: #000;
-    }
-
-    a.links:hover:before {
-        position: absolute;
-        left:5px;
-        top:5px;
-        display: block;
-        content: "";
-        width: 66px;
-        height: 71px;
-        border: 2px solid #fff;
-    }
-
-    .moreLinks {
-        position: absolute;
-        left: -35px;
-        bottom: 10px;
-        z-index: 5;
-        display: block;
-        width: 24px;
-        height: auto;
-        padding:10px 0;
-        border: 1px solid #000;
-
-        font-size: 20px;
-        text-decoration: none;
-        line-height: 25px;
-        text-align: center;
-        color: #000;
-    }
-
-    .moreLinks:hover,
-    .moreLinks:visited,
-    .moreLinks:active { color: #000; }
+    a.links.link02 { background-position: -378px 0; }
+    a.links.link03 { background-position: -756px 0; }
 
     /* tables settings */
     .tables {
@@ -441,7 +443,7 @@ body{margin:0;padding:0;font-family:arial, "微軟正黑體"}.wrapper{width:100%
     /* notice settings */
     .notice,
     .notice a {
-        background: #fff;
+        background: url(20151201_thanks/notice_bg.jpg) center repeat-y;
 
         color: #000;
     }
@@ -468,9 +470,10 @@ body{margin:0;padding:0;font-family:arial, "微軟正黑體"}.wrapper{width:100%
 
 
 </style>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
 $(function(){
-
+    elevetorActivity();
 
     $("a.links").each(function(){
       $(this).click(function(){
@@ -481,13 +484,83 @@ $(function(){
 
 
     function smoothScroll(obj) {
-      var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 
-      $body.animate({
-        scrollTop: $('.mainProds'+obj).offset().top
-      }, 1500);
-      return false;
+        $body.animate({
+            scrollTop: $('#mainProds'+obj).offset().top
+        },1500);
     }
+
+
+
+    function elevetorActivity(e){
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+        $(document).ready(function(){
+            calcPos();
+
+            $(".eleActive").hide();
+            $body.animate({ scrollTop: 0 },1);
+        });
+        $(window).resize(function(){ calcPos(); });
+
+        $(".eleActive ul li").find("a").click(function(){
+            var atPos = $(this).attr("href").split("#").pop();
+            scroll(atPos);
+            if(atPos != "top" && atPos != "end") {
+                $(this).parent("li").siblings("li").removeClass("active");
+                $(this).parent("li").addClass("active");
+            }else if(atPos == "top") {
+                $(".eleActive ul li").eq(1).addClass("active");
+            }else if(atPos == "end") {
+                $(".eleActive ul li").removeClass("active");
+            }
+        });
+
+
+        $(window).scroll(function(){
+            var $top = $(window).scrollTop();
+            var level1 = $('.cate01').offset().top;
+
+            if($top >= level1){
+                $(".eleActive").fadeIn("fast");
+            }else if($top < level1) {
+                $(".eleActive").fadeOut("fast");
+            }
+        });
+
+
+        function calcPos(){
+            var eHeight = $(".eleActive").height();
+            $(".eleActive").css({
+                'position': 'fixed',
+                'z-index': 99,
+                'top': '50%',
+                'margin-top': '-'+(eHeight/2)+'px'
+            });
+        }
+
+        function scroll(e){
+            var $BodyHeight = $(document).height();
+            var $viewportHeight = $(window).height();
+            var $endPos = $BodyHeight - $viewportHeight;
+
+
+
+            if(e == "top"){
+                $body.animate({ scrollTop: 0 },1500);
+            }else if(e == "end") {
+                $body.animate({ scrollTop: $endPos },1500);
+            }else{
+                $body.animate({
+                    scrollTop: $('.' + e ).offset().top
+                },1500);
+            }
+
+        }
+
+    }
+
 });
 </script>
 
@@ -495,6 +568,22 @@ $(function(){
 <div class="content">
     <div class="mainFocus">
       <div class="focusContent">
+          <div class="eleActive">
+              <ul>
+                  <li><a class="goTop" href="#top">top</a></li>
+                  <li class="active"><a class="cates01" href="#cate01">彩妝保養</a></li>
+                  <li><a class="cates02" href="#cate02">時尚精品</a></li>
+                  <li><a class="cates03" href="#cate03">美容家電</a></li>
+                  <li><a class="cates04" href="#cate04">廚房居家</a></li>
+                  <li><a class="cates05" href="#cate05">休閒零嘴</a></li>
+                  <li><a class="cates06" href="#cate06">保暖舒適</a></li>
+                  <li><a class="cates07" href="#cate07">親子同樂</a></li>
+                  <li><a class="cates08" href="#cate08">運動健身</a></li>
+                  <li><a class="cates09" href="#cate09">數位３Ｃ</a></li>
+                  <li><a class="cates10" href="#cate10">電腦周邊</a></li>
+                  <li><a class="goEnd" href="#end">end</a></li>
+              </ul>
+          </div>
       </div>
     </div>
     <div class="linksWrap">
@@ -502,20 +591,10 @@ $(function(){
             <a href="javascript:void(0);" class="links link01"></a>
             <a href="javascript:void(0);" class="links link02"></a>
             <a href="javascript:void(0);" class="links link03"></a>
-            <a href="javascript:void(0);" class="links link04"></a>
-            <a href="javascript:void(0);" class="links link05"></a>
-            <a href="javascript:void(0);" class="links link06"></a>
-            <a href="javascript:void(0);" class="links link07"></a>
-            <a href="javascript:void(0);" class="links link08"></a>
-            <a href="javascript:void(0);" class="links link09"></a>
-            <a href="javascript:void(0);" class="links link10"></a>
-            <a href="javascript:void(0);" class="links link11"></a>
-            <a href="javascript:void(0);" class="links link12"></a>
-            <a href="javascript:void(0);" class="links link13"></a>
         </div>
     </div>
 
-    <div class="mainProds01">
+    <div id="mainProds01" class="mainProds01">
         <div class="prods prods01">
             <div class="tables border">
                 <a class="moreLinks" href="/Store?StoreID=1279">看更多</a>
@@ -613,7 +692,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="mainProds02">
+    <div id="mainProds02" class="mainProds02">
         <div class="prods prods02">
             <div class="tables">
                 <a class="moreLinks" href="/Store?StoreID=734">看更多</a>
@@ -711,7 +790,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="mainProds03">
+    <div id="mainProds03" class="cate01">
         <div class="prods prods03">
             <div class="tables border">
                 <a class="moreLinks" href="/Store?StoreID=1929">看更多</a>
@@ -809,7 +888,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="mainProds04">
+    <div class="cate02">
         <div class="prods prods04">
             <div class="tables">
                 <a class="moreLinks" href="/Store?StoreID=1930">看更多</a>
@@ -907,7 +986,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="mainProds05">
+    <div  class="cate03">
         <div class="prods prods05">
             <div class="tables border">
                 <a class="moreLinks" href="/Store?StoreID=736">看更多</a>
@@ -1005,7 +1084,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="mainProds06">
+    <div  class="cate04">
         <div class="prods prods06">
             <div class="tables">
                 <a class="moreLinks" href="/Store?StoreID=735">看更多</a>
@@ -1103,7 +1182,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="mainProds07">
+    <div  class="cate05">
         <div class="prods prods07">
             <div class="tables border">
                 <a class="moreLinks" href="/Store?StoreID=7">看更多</a>
@@ -1201,7 +1280,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="mainProds08">
+    <div  class="cate06">
         <div class="prods prods08">
             <div class="tables">
                 <a class="moreLinks" href="/Store?StoreID=1928">看更多</a>
@@ -1299,7 +1378,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="mainProds09">
+    <div  class="cate07">
         <div class="prods prods09">
             <div class="tables border">
                 <a class="moreLinks" href="/Store?StoreID=6">看更多</a>
@@ -1397,7 +1476,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="mainProds10">
+    <div  class="cate08">
         <div class="prods prods10">
             <div class="tables">
                 <a class="moreLinks" href="/Store?StoreID=3">看更多</a>
@@ -1495,12 +1574,12 @@ $(function(){
         </div>
     </div>
 
-    <div class="mainProds11">
+    <div  class="cate09">
         <div class="prods prods11">
             <div class="tables border">
                 <a class="moreLinks" href="/Store?StoreID=264">看更多</a>
                 <div class="cubes longs" style="top:0px; left:0px;">
-                    <div class="itemBox" data-itemid="107698">
+                    <div class="itemBox" data-itemid="468878">
                         <div class="pic">
                             <a href="{{itemLink}}" target="_blank">
                                 <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" >
@@ -1593,7 +1672,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="mainProds12">
+    <div  class="cate10">
         <div class="prods prods12">
             <div class="tables">
                 <a class="moreLinks" href="/Store?StoreID=1">看更多</a>
@@ -1690,105 +1769,6 @@ $(function(){
             </div>
         </div>
     </div>
-
-    <div class="mainProds13">
-        <div class="prods prods13">
-            <div class="tables border">
-                <a class="moreLinks" href="/StoreUS?StoreID=737">看更多</a>
-                <div class="cubes longs" style="top:0px; left:0px;">
-                    <div class="itemBox" data-itemid="450690">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" >
-                            </a>
-                        </div>
-                        <div class="txt">
-                            <a href="{{itemLink}}" target="_blank">
-                                <p class="SubTitle">{{itemSubTitle}}</p>
-                                <h3>{{itemName_50}}</h3>
-                                {{itemPrice}}
-                            </a>
-                            {{itemAddToSC}}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cubes small" style=" top:0px; left: 320px; ">
-                    <div class="itemBox" data-itemid="474968">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" >
-                            </a>
-                        </div>
-                        <div class="txt">
-                            <a href="{{itemLink}}" target="_blank">
-                                <p class="SubTitle">{{itemSubTitle}}</p>
-                                <h3>{{itemName_50}}</h3>
-                                {{itemPrice}}
-                            </a>
-                            {{itemAddToSC}}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cubes small" style=" top:0px; left:640px;">
-                    <div class="itemBox" data-itemid="490150">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" >
-                            </a>
-                        </div>
-                        <div class="txt">
-                            <a href="{{itemLink}}" target="_blank">
-                                <p class="SubTitle">{{itemSubTitle}}</p>
-                                <h3>{{itemName_50}}</h3>
-                                {{itemPrice}}
-                            </a>
-                            {{itemAddToSC}}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cubes small non-border" style=" top:450px; left: 320px; ">
-                    <div class="itemBox" data-itemid="125188">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" >
-                            </a>
-                        </div>
-                        <div class="txt">
-                            <a href="{{itemLink}}" target="_blank">
-                                <p class="SubTitle">{{itemSubTitle}}</p>
-                                <h3>{{itemName_50}}</h3>
-                                {{itemPrice}}
-                            </a>
-                            {{itemAddToSC}}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cubes small non-border" style=" top:450px; right: 0px; ">
-                    <div class="itemBox" data-itemid="132144">
-                        <div class="pic">
-                            <a href="{{itemLink}}" target="_blank">
-                                <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" >
-                            </a>
-                        </div>
-                        <div class="txt">
-                            <a href="{{itemLink}}" target="_blank">
-                                <p class="SubTitle">{{itemSubTitle}}</p>
-                                <h3>{{itemName_50}}</h3>
-                                {{itemPrice}}
-                            </a>
-                            {{itemAddToSC}}
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
 
     <div class="notice">
       <div class="noticeWrap">
