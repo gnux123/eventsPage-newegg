@@ -200,11 +200,22 @@ body{margin:0;padding:0;font-family:arial, "微軟正黑體"}.wrapper{width:100%
         background-repeat: no-repeat;
     }
 
-    a.links.link01 { background-position: 0 0; }
-    a.links.link02 { background-position: -378px 0; }
-    a.links.link03 { background-position: -756px 0; }
-
     /* tables settings */
+    .content > div.mainProds01 .tables,
+    .content > div.mainProds02 .tables { top: 205px; }
+
+    .content > div.cate01 .tables { top: 280px; }
+    .content > div.cate02 .tables,
+    .content > div.cate03 .tables,
+    .content > div.cate04 .tables,
+    .content > div.cate05 .tables,
+    .content > div.cate06 .tables,
+    .content > div.cate07 .tables,
+    .content > div.cate08 .tables,
+    .content > div.cate09 .tables,
+    .content > div.cate10 .tables { top: 80px; }
+
+
     .tables {
         top: 30px;
         z-index: 1;
@@ -582,7 +593,7 @@ $(function(){
             }else if(e == "end") {
                 $body.animate({ scrollTop: $endPos },1500);
             }else{
-                $body.animate({
+                $body.stop(true,true).animate({
                     scrollTop: $('.' + e ).offset().top
                 },1500);
             }
