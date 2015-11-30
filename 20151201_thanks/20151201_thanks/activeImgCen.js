@@ -113,11 +113,11 @@ function verticalActivePic(e) {
         "top": "50%"
     });
 
-    if(picSize == 1){
+    if (picSize == 1) {
         e.css({
-    		"max-width": "none",
-    		"max-height": "none"
-    	});
+            "max-width": "none",
+            "max-height": "none"
+        });
 
         if (imgSize == 1) {
             e.css({
@@ -133,7 +133,7 @@ function verticalActivePic(e) {
                 "margin-left": ((maxHeight * imgSize) / 2) * -1,
                 "margin-top": (maxHeight / 2) * -1
             });
-        }else if (imgSize > 1) {
+        } else if (imgSize > 1) {
             e.css({
                 "width": maxWidth,
                 "height": maxWidth / imgSize,
@@ -143,60 +143,70 @@ function verticalActivePic(e) {
         }
 
     } else if (picSize < 1) {
-    	e.css({
-    		"max-width": "none",
-    		"max-height": "none"
-    	});
+        e.css({
+            "max-width": "none",
+            "max-height": "none"
+        });
 
-    	if (imgSize == 1) {
-    		e.css({
-    		    "width": maxWidth,
-    			"height": maxWidth,
-    			"margin-top": (maxWidth / 2) * -1,
-        		"margin-left": (maxWidth / 2) * -1
-    		});
-    	}else if (imgSize < 1) {
-    		e.css({
-    			"height": maxHeight,
-                "width": maxHeight * imgSize,
-    			"margin-top": (maxHeight / 2) * -1,
-                "margin-left": ((maxHeight * imgSize) / 2) * -1
-    		});
-    	}else if (imgSize > 1) {
-    		e.css({
-    		    "width":  maxWidth,
-    			"height": maxWidth / imgSize,
-    			"margin-top": ((maxWidth / imgSize)/2) * -1,
-                "margin-left": (maxWidth / 2) * -1
-    		});
-    	}
-
-    } else if (picSize > 1) {
-    	e.css({
-    		"max-width": "none",
-    		"max-height": "none",
-    	});
-
-    	if (imgSize == 1) {
-    		e.css({
-    			"width": maxHeight,
-        		"height": maxHeight,
-    			"margin-left": (maxHeight / 2) * -1,
-        		"margin-top": (maxHeight / 2) * -1
-    		});
-    	}else if (imgSize < 1) {
-    		e.css({
-    			"width": maxHeight * imgSize,
-                "height": maxHeight,
-    			"margin-left": ((maxHeight * imgSize)/2) * -1,
-                "margin-top": (maxHeight / 2) * -1
-    		});
-    	}else if (imgSize > 1) {
+        if (imgSize == 1) {
             e.css({
                 "width": maxWidth,
-                "height": maxWidth * imgSize,
-                "margin-left": (maxWidth / 2) * -1,
-                "margin-top": ((maxWidth * imgSize) / 2) * -1
+                "height": maxWidth,
+                "margin-top": (maxWidth / 2) * -1,
+                "margin-left": (maxWidth / 2) * -1
+            });
+        } else if (imgSize < 1) {
+            if(imgSize > 0.6){
+                e.css({
+                    "height": maxWidth / imgSize,
+                    "width": maxWidth,
+                    "margin-top": ((maxWidth / imgSize) / 2) * -1,
+                    "margin-left": (maxWidth / 2) * -1
+                });
+
+            }else{
+                e.css({
+                    "height": maxHeight,
+                    "width": maxHeight * imgSize,
+                    "margin-top": (maxHeight / 2) * -1,
+                    "margin-left": ((maxHeight * imgSize) / 2) * -1
+                });
+            }
+        } else if (imgSize > 1) {
+            e.css({
+                "width": maxWidth,
+                "height": maxWidth / imgSize,
+                "margin-top": ((maxWidth / imgSize) / 2) * -1,
+                "margin-left": (maxWidth / 2) * -1
+            });
+        }
+
+    } else if (picSize > 1) {
+        e.css({
+            "max-width": "none",
+            "max-height": "none",
+        });
+
+        if (imgSize == 1) {
+            e.css({
+                "width": maxHeight,
+                "height": maxHeight,
+                "margin-left": (maxHeight / 2) * -1,
+                "margin-top": (maxHeight / 2) * -1
+            });
+        } else if (imgSize < 1) {
+            e.css({
+                "width": maxHeight * imgSize,
+                "height": maxHeight,
+                "margin-left": ((maxHeight * imgSize) / 2) * -1,
+                "margin-top": (maxHeight / 2) * -1
+            });
+        } else if (imgSize > 1) {
+            e.css({
+                "width": maxHeight * imgSize,
+                "height": maxHeight,
+                "margin-left": ((maxHeight * imgSize) / 2) * -1,
+                "margin-top": (maxHeight / 2) * -1
             });
         }
     }
