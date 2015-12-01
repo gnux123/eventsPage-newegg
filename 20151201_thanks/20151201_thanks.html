@@ -219,10 +219,10 @@ body{margin:0;padding:0;font-family:arial, "微軟正黑體"}.wrapper{width:100%
         position: relative;
         float:left;
         display: block;
-        width: 378px;
-        height: 85px;
+        width: 368px;
+        height: 65px;
         overflow: hidden;
-        background-image: url(/img/Activity/20151201_thanks/linksBtn.gif);
+        margin: 10px 5px;
         background-repeat: no-repeat;
     }
 
@@ -233,9 +233,17 @@ body{margin:0;padding:0;font-family:arial, "微軟正黑體"}.wrapper{width:100%
         height: 30px;
         background: transparent;
     }
-    a.links.link01 { background-position: 0 0;}
-    a.links.link02 { background-position: -378px 0;}
-    a.links.link03 { background-position: -756px 0;}
+
+    a.links.linknotice::before { display: none; }
+
+    a.links.link01 { background-image: url(/img/Activity/20151201_thanks/linksBtn01_org.gif); }
+    a.links.link01:hover { background-image: url(/img/Activity/20151201_thanks/linksBtn01.gif); }
+
+    a.links.link02 { background-image: url(/img/Activity/20151201_thanks/linksBtn02_org.gif); }
+    a.links.link02:hover { background-image: url(/img/Activity/20151201_thanks/linksBtn02.gif); }
+
+    a.links.link03 { background-image: url(/img/Activity/20151201_thanks/linksBtn03_org.gif); }
+    a.links.link03:hover { background-image: url(/img/Activity/20151201_thanks/linksBtn03.gif); }
 
     /* tables settings */
     .content > div.mainProds01 .tables,
@@ -427,6 +435,11 @@ body{margin:0;padding:0;font-family:arial, "微軟正黑體"}.wrapper{width:100%
         line-height: 23px;
         color: #666;
 
+    }
+
+    .small .itemBox .buyNow:hover{
+        background: #666;
+        color: #fff;
     }
 
     .itemBox > .txt {
@@ -1683,7 +1696,7 @@ $(function(){
               </div>
 
               <div class="cubes small top2" style=" top:0px; left: 208px;">
-                  <div class="itemBox" data-itemid="493966">
+                  <div class="itemBox" data-itemid="499353">
                       <div class="pic">
                           <a href="{{itemLink}}" target="_blank">
                               <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="ActiveItemImgCen">
@@ -2655,7 +2668,7 @@ $(function(){
               </div>
 
               <div class="cubes small" style=" top:0px; left:624px; ">
-                  <div class="itemBox" data-itemid="500751">
+                  <div class="itemBox" data-itemid="97567">
                       <div class="pic">
                           <a href="{{itemLink}}" target="_blank">
                               <img src="{{itemImgUrl_1_300}}" alt="{{itemName_50}}" class="ActiveItemImgCen">
