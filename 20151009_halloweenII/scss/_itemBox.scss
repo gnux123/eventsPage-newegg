@@ -1,0 +1,114 @@
+.itemBox {
+    &,
+    & .pic,
+    & .pic img {
+        position: relative;
+    }
+
+    .pic,
+    .pic img {
+        z-index:-1 \9;
+    }
+
+    .pic {
+        position: relative;
+        display:block;
+        margin: 0 auto;
+        overflow: hidden;
+
+        a {
+            position: absolute;
+            display: block;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        a img { max-width: 100%; }
+
+    }
+
+
+
+    .txt {
+        position: absolute;
+
+        a {
+            text-decoration: none;
+            @include pie-clearfix;
+        }
+
+
+        p,
+        h3,
+        span {
+            position: absolute;
+            overflow:hidden;
+        }
+
+        p, h3 { width: 100%; }
+
+        h3 {
+            color:#000;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        span {
+            display: inline-block;
+            width:auto;
+
+            font-family: arial;
+
+            &.price > span,
+            &.marketPrice > span {
+                position: relative;
+                display: inline-block;
+                width: auto;
+                margin-right: 2px;
+
+                font-size: 13px;
+                line-height: 11px;
+            }
+
+            &.price {
+                height:50px;
+                font-size:28px;
+                line-height:50px;
+            }
+
+            &.marketPrice {
+                font-size: 16px;
+                color:#666;
+                text-decoration: line-through;
+            }
+
+        }
+
+    }
+
+
+    //立即購買 按鈕
+    .buyNow {
+        position: absolute;
+        display: block;
+        text-align: center;
+        cursor:pointer;
+
+        &.arrows:before {
+            position: absolute;
+            display: block;
+            content: "";
+        }
+    }
+
+    //加入購物車按鈕
+    .addCart {
+        position:absolute;
+        z-index:2 \9;
+        overflow:hidden;
+        background-repeat:  no-repeat;
+    }
+
+
+}

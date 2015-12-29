@@ -1,0 +1,12 @@
+@media screen and (min-width:0px) and (max-width: 1024px) {
+    .focusContent,
+    .prods,
+    .noticeWrap { width:$min-w#{px}; }
+}
+
+@media screen and (min-width:1025px) and (max-width: 1280px) {
+    .footer {
+        margin:0;
+        width: 100%;
+    }
+}

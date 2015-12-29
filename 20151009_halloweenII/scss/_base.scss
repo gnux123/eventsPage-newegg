@@ -1,0 +1,22 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: arial, "微軟正黑體";
+}
+
+.wrapper {
+    width:100%;
+    min-width:$min-w#{px};
+
+    .mainPadding {
+        margin: 0 auto;
+        margin-bottom: 0px;
+    }
+}
+
+a img { border:0; }
+
+a.links {
+  position: absolute;
+  display:block;
+}
