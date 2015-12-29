@@ -7,11 +7,7 @@ function activeImgLoad() {
         var activiteImgSrc = $(this).attr("src");
 
         if (!!activiteImgSrc) {
-            if (activiteImgSrc.indexOf("itemImgUrl") == -1) {
-                verticalActiveDetect($(this));
-            } else if (activiteImgSrc.indexOf("itemImgUrl") > -1) {
-                isLoad = false;
-            }
+            if (activiteImgSrc.indexOf("itemImgUrl") > -1) { isLoad = false; }
         }
 
     });
@@ -19,7 +15,11 @@ function activeImgLoad() {
     if (isLoad === false) {
         t_img = setTimeout(function () {
             activeImgLoad();
-        }, 1000);
+        }, 100);
+    }else{
+        $(".ActiveItemImgCen").each(function () {
+            verticalActiveDetect($(this));
+        });
     }
 
 }
